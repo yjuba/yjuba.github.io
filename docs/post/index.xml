@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on www.y103.dev</title>
+    <link>https://www.y103.dev/post/</link>
+    <description>Recent content in Posts on www.y103.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>yjuba</copyright>
+    <lastBuildDate>Mon, 24 Aug 2020 23:29:48 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.y103.dev/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UQ mobileに乗り換えた</title>
+      <link>https://www.y103.dev/post/2020/08/switch-to-uq-mobile/</link>
+      <pubDate>Mon, 24 Aug 2020 23:29:48 +0900</pubDate>
+      
+      <guid>https://www.y103.dev/post/2020/08/switch-to-uq-mobile/</guid>
+      <description>2年半ほど利用していたワイモバイルからUQ mobileに乗り換えた。 古くはボーダフォン（その前はJ-PHONE）の頃からソフトバンク系の回線</description>
+    </item>
+    
+  </channel>
+</rss>

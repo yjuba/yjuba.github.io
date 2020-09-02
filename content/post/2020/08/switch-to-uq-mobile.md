@@ -6,6 +6,7 @@ draft: false
 author: "yjuba"
 categories:
   - "携帯キャリア"
+  - "月額課金"
 ---
 
 2年半ほど利用していたワイモバイルからUQ mobileに乗り換えた。

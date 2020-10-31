@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>yjuba</copyright>
-    <lastBuildDate>Wed, 23 Sep 2020 18:54:46 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 17:00:02 +0900</lastBuildDate>
     
 	<atom:link href="https://www.y103.dev/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>client_golangを使ってPrometheusのtext formatに即したファイルを生成する</title>
+      <link>https://www.y103.dev/post/2020/10/prometheus-textfile/</link>
+      <pubDate>Sat, 31 Oct 2020 17:00:02 +0900</pubDate>
+      
+      <guid>https://www.y103.dev/post/2020/10/prometheus-textfile/</guid>
+      <description>以下のツイートをして早二月が経過しようとしていたので、慌ててBlogを起こしている。 先月は時間に余裕があったので勝手に達成していたが、 今月は</description>
+    </item>
     
     <item>
       <title>USB切替器を購入した</title>

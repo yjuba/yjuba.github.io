@@ -3,27 +3,41 @@
   
   <url>
     <loc>https://www.y103.dev/categories/</loc>
-    <lastmod>2020-09-23T18:54:46+09:00</lastmod>
+    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.y103.dev/post/2020/10/prometheus-textfile/</loc>
+    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/post/</loc>
-    <lastmod>2020-09-23T18:54:46+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.y103.dev/post/2020/09/sanwa-supply-sw-us22n/</loc>
-    <lastmod>2020-09-23T18:54:46+09:00</lastmod>
+    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/</loc>
+    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/</loc>
+    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.y103.dev/post/2020/09/sanwa-supply-sw-us22n/</loc>
     <lastmod>2020-09-23T18:54:46+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

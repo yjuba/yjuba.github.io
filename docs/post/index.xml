@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>yjuba</copyright>
-    <lastBuildDate>Sat, 31 Oct 2020 17:00:02 +0900</lastBuildDate><atom:link href="https://www.y103.dev/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Nov 2020 16:05:22 +0900</lastBuildDate><atom:link href="https://www.y103.dev/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iPhone SE2に乗り換えた</title>
+      <link>https://www.y103.dev/post/2020/11/switch-to-iphone-se2/</link>
+      <pubDate>Sun, 29 Nov 2020 16:05:22 +0900</pubDate>
+      
+      <guid>https://www.y103.dev/post/2020/11/switch-to-iphone-se2/</guid>
+      <description>例によって月末ギリギリにブログを書いている。 iPhone 6sを使うこと丸5年、ようやく新しいiPhone SE2に乗り換えることにしました。 前回に続き今</description>
+    </item>
+    
     <item>
       <title>client_golangを使ってPrometheusのtext formatに即したファイルを生成する</title>
       <link>https://www.y103.dev/post/2020/10/prometheus-textfile/</link>

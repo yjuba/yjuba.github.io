@@ -3,27 +3,41 @@
   
   <url>
     <loc>https://www.y103.dev/categories/</loc>
-    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
+    <lastmod>2020-11-29T16:05:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://www.y103.dev/post/2020/10/prometheus-textfile/</loc>
-    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
+    <loc>https://www.y103.dev/post/2020/11/switch-to-iphone-se2/</loc>
+    <lastmod>2020-11-29T16:05:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/post/</loc>
-    <lastmod>2020-10-31T17:00:02+09:00</lastmod>
+    <lastmod>2020-11-29T16:05:22+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/</loc>
+    <lastmod>2020-11-29T16:05:22+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.y103.dev/categories/%E8%B3%BC%E5%85%A5/</loc>
+    <lastmod>2020-11-29T16:05:22+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.y103.dev/post/2020/10/prometheus-textfile/</loc>
     <lastmod>2020-10-31T17:00:02+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,13 +59,6 @@
   
   <url>
     <loc>https://www.y103.dev/categories/%E6%9C%89%E7%B5%A6%E3%81%AE%E6%97%A5%E3%81%AB%E6%9B%B8%E3%81%84%E3%81%9F%E3%82%84%E3%81%A4/</loc>
-    <lastmod>2020-09-23T18:54:46+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.y103.dev/categories/%E8%B3%BC%E5%85%A5/</loc>
     <lastmod>2020-09-23T18:54:46+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

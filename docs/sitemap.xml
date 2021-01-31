@@ -2,35 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.y103.dev/post/2020/12/2020/</loc>
-    <lastmod>2020-12-31T16:30:25+09:00</lastmod>
+    <loc>https://www.y103.dev/post/2021/01/looking-back-on-jan/</loc>
+    <lastmod>2021-01-31T20:23:12+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/categories/</loc>
-    <lastmod>2020-12-31T16:30:25+09:00</lastmod>
+    <lastmod>2021-01-31T20:23:12+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/post/</loc>
-    <lastmod>2020-12-31T16:30:25+09:00</lastmod>
+    <lastmod>2021-01-31T20:23:12+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/</loc>
-    <lastmod>2020-12-31T16:30:25+09:00</lastmod>
+    <lastmod>2021-01-31T20:23:12+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.y103.dev/categories/%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</loc>
+    <lastmod>2021-01-31T20:23:12+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.y103.dev/post/2020/12/2020/</loc>
     <lastmod>2020-12-31T16:30:25+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

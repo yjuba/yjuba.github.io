@@ -5,15 +5,15 @@
     <link>https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/</link>
     <description>Recent content in 技術 on www.y103.dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>ja</language>
     <copyright>yjuba</copyright>
     <lastBuildDate>Sat, 31 Oct 2020 17:00:02 +0900</lastBuildDate><atom:link href="https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>client_golangを使ってPrometheusのtext formatに即したファイルを生成する</title>
-      <link>https://www.y103.dev/post/2020/10/prometheus-textfile/</link>
+      <link>https://www.y103.dev/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</link>
       <pubDate>Sat, 31 Oct 2020 17:00:02 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/10/prometheus-textfile/</guid>
+      <guid>https://www.y103.dev/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</guid>
       <description>以下のツイートをして早二月が経過しようとしていたので、慌ててBlogを起こしている。 先月は時間に余裕があったので勝手に達成していたが、 今月は</description>
     </item>
     

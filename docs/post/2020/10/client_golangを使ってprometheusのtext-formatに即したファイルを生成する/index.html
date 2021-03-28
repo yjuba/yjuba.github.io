@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.82.0" />
+
+    <title>
+        www.y103.dev
+    </title>
+
+    <link rel="icon" href="https://www.y103.dev/favicon.ico">
+    <link rel="stylesheet" href="https://www.y103.dev/css/primer.css" />
+</head>
+
+<body>
+    <div>
+        <div class="container-md">
+            <div class="p-4">
+                <header>
+    <p class="h2">
+        <a href="https://www.y103.dev/">www.y103.dev</a>
+    </p>
+</header>
+                <div class="markdown-body">
+                    
+
+<main>
+    <header>
+        <h1>
+            client_golangを使ってPrometheusのtext formatに即したファイルを生成する
+        </h1>
+    </header>
+    <article>
+        <p>以下のツイートをして早二月が経過しようとしていたので、慌ててBlogを起こしている。
+先月は時間に余裕があったので勝手に達成していたが、
+今月はFF14のパッチ5.35が来たり仕事が忙しくて危うく10月が終わるところだった。殆どボズヤに籠もりっぱなしである。
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">月に一本は雑でも良いのでBlogを書くという目標を勝手に立てて勝手に完了した。</p>&mdash; silver_hawk(銀鷹) (@yutaka_j08) <a href="https://twitter.com/yutaka_j08/status/1301175780366458880?ref_src=twsrc%5Etfw">September 2, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+<p>以下本題。</p>
+<p>仕事で時折PrometheusのExporerを自作していたが、あまり乱立させるのもどうかと思い、node exporterのtextfile collectorを通して提供する形に変更する検証を行っていた。
+その際に、先行事例を調べたが、すぐ見つかる範囲ではシェルスクリプトやワンライナーを定期実行している事例が多く、<a href="https://pkg.go.dev/github.com/prometheus/client_golang/prometheus" target="_blank">client_golang</a>
+を使った事例をあまり見かけなかったので簡単に記載する。</p>
+<p>まず、大枠としては<a href="https://pkg.go.dev/github.com/prometheus/client_golang/prometheus#WriteToTextfile" target="_blank">WriteToTextfile</a>
+を利用すれば良い。
+ドキュメントにも記載があるとおり、一時ファイルに書き込んだ後リネームするため細かいことを心配する必要も無い。</p>
+<p>個人的に少し引っかかったのは、第二引数の<a href="https://pkg.go.dev/github.com/prometheus/client_golang/prometheus#Gatherer" target="_blank">Gatherer</a>
+で返却する<a href="https://pkg.go.dev/github.com/prometheus/client_model/go#MetricFamily" target="_blank">dto.MetricFamily</a>
+だった。</p>
+<p>MetricFamilyを生成するための関数も無く、どのような形で生成するのがいいか迷っていたが、テストコード中でMetricFamilyを生成している箇所を発見して事なきを得た。</p>
+<p><a href="https://github.com/prometheus/client_golang/blob/v1.8.0/prometheus/registry_test.go#L73-L94" target="_blank">https://github.com/prometheus/client_golang/blob/v1.8.0/prometheus/registry_test.go#L73-L94</a>
+</p>
+<p>元がprotoファイルから生成されたモデルなので、<a href="https://pkg.go.dev/github.com/golang/protobuf/proto#String" target="_blank">proto.String</a>
+等を利用すれば良いらしい。
+せめて、ドキュメントのどこかに一言くらい言及があると嬉しかったかも知れない。</p>
+<p>textfile collectorへの置き換え自体は完了していないので、今は掲載するコードがないが、終わった暁にはサンプルも掲載したい。（単に10月が終わりそうで間に合わないというのも大きいが･･･）</p>
+
+    </article>
+</main>
+
+
+                </div>
+                <footer>
+    <p>
+        &copy; 2021 www.y103.dev. All rights reserved.
+    </p>
+</footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

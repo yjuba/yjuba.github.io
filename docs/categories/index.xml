@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>yjuba</copyright>
-    <lastBuildDate>Tue, 02 Mar 2021 22:33:11 +0900</lastBuildDate><atom:link href="https://www.y103.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 15:28:43 +0900</lastBuildDate><atom:link href="https://www.y103.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技術</title>
+      <link>https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/</link>
+      <pubDate>Sun, 28 Mar 2021 15:28:43 +0900</pubDate>
+      
+      <guid>https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>振り返り</title>
       <link>https://www.y103.dev/categories/%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/</link>
@@ -23,15 +32,6 @@
       <pubDate>Thu, 31 Dec 2020 16:30:25 +0900</pubDate>
       
       <guid>https://www.y103.dev/categories/%E8%B3%BC%E5%85%A5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>技術</title>
-      <link>https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/</link>
-      <pubDate>Sat, 31 Oct 2020 17:00:02 +0900</pubDate>
-      
-      <guid>https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/</guid>
       <description></description>
     </item>
     

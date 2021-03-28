@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>yjuba</copyright>
-    <lastBuildDate>Sat, 31 Oct 2020 17:00:02 +0900</lastBuildDate><atom:link href="https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Mar 2021 15:28:43 +0900</lastBuildDate><atom:link href="https://www.y103.dev/categories/%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自作のテーマに乗り換えた</title>
+      <link>https://www.y103.dev/post/2021/03/%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
+      <pubDate>Sun, 28 Mar 2021 15:28:43 +0900</pubDate>
+      
+      <guid>https://www.y103.dev/post/2021/03/%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
+      <description>タイトルの通りですが、今まで使っていたeven から自作のテーマ に乗り換えました。 久々にHTMLとCSSを書くこととなり大層苦労しましたが、一</description>
+    </item>
+    
     <item>
       <title>client_golangを使ってPrometheusのtext formatに即したファイルを生成する</title>
       <link>https://www.y103.dev/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</link>

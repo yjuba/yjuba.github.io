@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>www.y103.dev</title>
-    <link>https://www.y103.dev/</link>
-    <description>Recent content on www.y103.dev</description>
+    <title>www.y103.org</title>
+    <link>https://www.y103.org/</link>
+    <description>Recent content on www.y103.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>www.y103.dev is licensed under CC-BY-4.0.</copyright>
-    <lastBuildDate>Sun, 28 Mar 2021 15:28:43 +0900</lastBuildDate><atom:link href="https://www.y103.dev/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>www.y103.org is licensed under CC-BY-4.0.</copyright>
+    <lastBuildDate>Sun, 28 Mar 2021 15:28:43 +0900</lastBuildDate><atom:link href="https://www.y103.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自作のテーマに乗り換えた</title>
-      <link>https://www.y103.dev/post/2021/03/%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
+      <link>https://www.y103.org/post/2021/03/%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
       <pubDate>Sun, 28 Mar 2021 15:28:43 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2021/03/%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
+      <guid>https://www.y103.org/post/2021/03/%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
       <description>タイトルの通りですが、今まで使っていたeven から自作のテーマ に乗り換えました。 久々にHTMLとCSSを書くこととなり大層苦労しましたが、一</description>
     </item>
     
     <item>
       <title>2021年の02月を振り返る</title>
-      <link>https://www.y103.dev/post/2021/03/2021%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
+      <link>https://www.y103.org/post/2021/03/2021%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
       <pubDate>Tue, 02 Mar 2021 22:33:11 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2021/03/2021%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
+      <guid>https://www.y103.org/post/2021/03/2021%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
       <description>バタバタしすぎていて2月を過ぎてからお送りします。 まずは振り返りから。 仕事関係 2月はおおよそ以下の物事が進行していた様に思う。 今後の方針に関</description>
     </item>
     
     <item>
       <title>2021年の01月を振り返る</title>
-      <link>https://www.y103.dev/post/2021/01/2021%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
+      <link>https://www.y103.org/post/2021/01/2021%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
       <pubDate>Sun, 31 Jan 2021 20:23:12 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2021/01/2021%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
+      <guid>https://www.y103.org/post/2021/01/2021%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
       <description>例によって月末ギリギリにお送りします。 昨年末に、2020年の振り返りを書いていたときに、 毎月書いておけばその年は何をやったか忘れ無いのでは無</description>
     </item>
     
     <item>
       <title>2020年の振り返りと買って良かった物</title>
-      <link>https://www.y103.dev/post/2020/12/2020%E5%B9%B4%E3%81%AE%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A%E3%81%A8%E8%B2%B7%E3%81%A3%E3%81%A6%E8%89%AF%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%A9/</link>
+      <link>https://www.y103.org/post/2020/12/2020%E5%B9%B4%E3%81%AE%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A%E3%81%A8%E8%B2%B7%E3%81%A3%E3%81%A6%E8%89%AF%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%A9/</link>
       <pubDate>Thu, 31 Dec 2020 16:30:25 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/12/2020%E5%B9%B4%E3%81%AE%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A%E3%81%A8%E8%B2%B7%E3%81%A3%E3%81%A6%E8%89%AF%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%A9/</guid>
+      <guid>https://www.y103.org/post/2020/12/2020%E5%B9%B4%E3%81%AE%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A%E3%81%A8%E8%B2%B7%E3%81%A3%E3%81%A6%E8%89%AF%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%A9/</guid>
       <description>振り返り 会社のカレンダーを見つつ時系列で振り返る、正直かなり記憶が怪しい。 全体を通して、メンテナンスの件数が多い1年間だったように思う。 01</description>
     </item>
     
     <item>
       <title>iPhone SE2に乗り換えた</title>
-      <link>https://www.y103.dev/post/2020/11/iphone-se2%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
+      <link>https://www.y103.org/post/2020/11/iphone-se2%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
       <pubDate>Sun, 29 Nov 2020 16:05:22 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/11/iphone-se2%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
+      <guid>https://www.y103.org/post/2020/11/iphone-se2%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
       <description>例によって月末ギリギリにブログを書いている。 iPhone 6sを使うこと丸5年、ようやく新しいiPhone SE2に乗り換えることにしました。 前回に続き今</description>
     </item>
     
     <item>
       <title>client_golangを使ってPrometheusのtext formatに即したファイルを生成する</title>
-      <link>https://www.y103.dev/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</link>
+      <link>https://www.y103.org/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</link>
       <pubDate>Sat, 31 Oct 2020 17:00:02 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</guid>
+      <guid>https://www.y103.org/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</guid>
       <description>以下のツイートをして早二月が経過しようとしていたので、慌ててBlogを起こしている。 先月は時間に余裕があったので勝手に達成していたが、 今月は</description>
     </item>
     
     <item>
       <title>USB切替器を購入した</title>
-      <link>https://www.y103.dev/post/2020/09/usb%E5%88%87%E6%9B%BF%E5%99%A8%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</link>
+      <link>https://www.y103.org/post/2020/09/usb%E5%88%87%E6%9B%BF%E5%99%A8%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</link>
       <pubDate>Wed, 23 Sep 2020 18:54:46 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/09/usb%E5%88%87%E6%9B%BF%E5%99%A8%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</guid>
+      <guid>https://www.y103.org/post/2020/09/usb%E5%88%87%E6%9B%BF%E5%99%A8%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</guid>
       <description>仕事でZoomをする時とプライベートでDiscordをする時で都度USBのマイクを差し替えていた。 いい加減めんどくさくなったので、サンワサプ</description>
     </item>
     
     <item>
       <title>RME ADI-2 DAC FSを購入した</title>
-      <link>https://www.y103.dev/post/2020/09/rme-adi-2-dac-fs%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</link>
+      <link>https://www.y103.org/post/2020/09/rme-adi-2-dac-fs%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 17 Sep 2020 20:38:23 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/09/rme-adi-2-dac-fs%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</guid>
+      <guid>https://www.y103.org/post/2020/09/rme-adi-2-dac-fs%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/</guid>
       <description>昨今の事情で家に居る時間が増えた結果、音楽を聴く時間が増えた。 そのため、以前から欲しいと思っていたDAC（Digital Analog Converter</description>
     </item>
     
     <item>
       <title>ATOK Passportに乗り換えた</title>
-      <link>https://www.y103.dev/post/2020/09/atok-passport%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
+      <link>https://www.y103.org/post/2020/09/atok-passport%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
       <pubDate>Wed, 02 Sep 2020 23:22:25 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/09/atok-passport%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
+      <guid>https://www.y103.org/post/2020/09/atok-passport%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
       <description>2010年頃から長らくGoolge IME/Mozcを愛用していたが、最近ATOK Passportプレミアムに乗り換えた。 乗り換えてから一ヶ月</description>
     </item>
     
     <item>
       <title>UQ mobileに乗り換えた</title>
-      <link>https://www.y103.dev/post/2020/08/uq-mobile%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
+      <link>https://www.y103.org/post/2020/08/uq-mobile%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</link>
       <pubDate>Mon, 24 Aug 2020 23:29:48 +0900</pubDate>
       
-      <guid>https://www.y103.dev/post/2020/08/uq-mobile%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
+      <guid>https://www.y103.org/post/2020/08/uq-mobile%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/</guid>
       <description>2年半ほど利用していたワイモバイルからUQ mobileに乗り換えた。 古くはボーダフォン（その前はJ-PHONE）の頃からソフトバンク系の回線</description>
     </item>
     

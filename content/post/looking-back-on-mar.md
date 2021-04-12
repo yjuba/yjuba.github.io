@@ -49,9 +49,9 @@ FL Super Haze Anorakは真冬以外に使うアウターとして購入した。
 各社GORE-TEXの親戚のような素材で製品を出していることを知った。
 特にTHE NORTH FACEのFUTURELIGHTは蒸れない素材ということだったので、
 近くのストアで試着し非常にいい感じだったのでそのまま購入した。
-実際非常に気に入って着ているが、何点は価格が高いことだろうか･･･
+実際非常に気に入って着ているが、難点は価格が高いことだろうか･･･
 
-YubiKey 5 NFCは、[https://keens.github.io/blog/2021/03/23/yubikeywotsukau_openpghen/](元同僚のブログ)に触発されて、
+YubiKey 5 NFCは、[元同僚のブログ](https://keens.github.io/blog/2021/03/23/yubikeywotsukau_openpghen/)に触発されて、
 最近GPGやSSHの鍵を全てYubiKeyに寄せたのを契機に予備があった方が良いと思い購入した。
 本当は、2年位前から発表されているYubiKey Bioに期待しているのだが、発表以来音沙汰が無いので一旦諦めた。
 色々試したので、この周りはいずれブログに起こしたいと思います。

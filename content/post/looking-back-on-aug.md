@@ -1,6 +1,6 @@
 ---
-title: "2021年の07月を振り返る"
-description: "2021年の07月を振り返る"
+title: "2021年の08月を振り返る"
+description: "2021年の08月を振り返る"
 date: 2021-09-01T21:40:14+09:00
 draft: false
 author: "yjuba"

@@ -1,6 +1,6 @@
 ---
 title: "2021年の11月を振り返る"
-description: "2021年の1月を振り返る"
+description: "2021年の11月を振り返る"
 date: 2021-12-17T20:18:35+09:00
 draft: false
 author: "yjuba"

@@ -2,7 +2,7 @@ baseURL = "https://www.y103.org/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 title = "www.y103.org"
-theme = "hugo-theme-my-blog"
+theme = "etch"
 publishDir = "docs"
 
 pygmentsOptions = "linenos=table"
@@ -12,13 +12,14 @@ pygmentsCodefencesGuessSyntax = true
 
 hasCJKLanguage = true
 # googleAnalytics = "UA-176946145-1"
-copyright = "www.y103.org is licensed under CC-BY-4.0."
+
 
 [author]
   name = "yjuba"
 
 [params]
   dateformat = "2006/01/02"
+  copyright = "www.y103.org is licensed under CC-BY-4.0."
 
 [permalinks]
   post = "/post/:year/:month/:title/"

@@ -5,10 +5,9 @@ title = "www.y103.org"
 theme = "etch"
 publishDir = "docs"
 
-pygmentsOptions = "linenos=table"
 pygmentsCodefences = true
 pygmentsUseClasses = true
-pygmentsCodefencesGuessSyntax = true
+pygmentsCodeFences = true
 
 hasCJKLanguage = true
 # googleAnalytics = "UA-176946145-1"
@@ -20,6 +19,7 @@ hasCJKLanguage = true
 [params]
   dateformat = "2006/01/02"
   copyright = "www.y103.org is licensed under CC-BY-4.0."
+  highlight = true
 
 [permalinks]
   post = "/post/:year/:month/:title/"

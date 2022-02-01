@@ -45,8 +45,7 @@
     }
 
     main#content pre {
-        width: 108%;
-        margin-left: -3.8%;
         padding: 1.5rem 2.2rem;
+        border-radius: 6px;
     }
 }

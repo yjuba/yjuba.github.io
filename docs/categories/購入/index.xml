@@ -13,6 +13,64 @@
     
     
     <item>
+      <title>2022年の04月を振り返る</title>
+      <link>https://www.y103.org/post/2022/05/2022%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
+      <pubDate>Thu, 05 May 2022 06:30:54 +0100</pubDate>
+      
+      <guid>https://www.y103.org/post/2022/05/2022%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
+      <description>&lt;p&gt;日本はゴールデンウィークですが世界的には情勢が落ち着かないままですね。すさまじい円安も進んでいるので公私共に悩みは増える一方です。&lt;/p&gt;
+&lt;h1 id=&#34;仕事関係&#34;&gt;仕事関係&lt;/h1&gt;
+&lt;p&gt;とりあえず期末期初のバタバタは落ち着いたと見ています。ゴールデンウィーク明けから改めて諸々走り出せるようにしっかりと休みたいところです。&lt;/p&gt;
+&lt;h1 id=&#34;プライベート&#34;&gt;プライベート&lt;/h1&gt;
+&lt;h2 id=&#34;ff14&#34;&gt;FF14&lt;/h2&gt;
+&lt;p&gt;想定以上に歯応えのありそうな絶となっています。ようやくトップ層のクリアが出始めているので徐々に攻略情報も揃ってくるでしょう。いずれにせよ攻略には時間が掛かるので落ち着いて取り組んでいきたいと思っています。&lt;/p&gt;
+&lt;h2 id=&#34;内窓設置&#34;&gt;内窓設置&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.y103.org/post/2022/05/%E8%87%AA%E5%AE%85%E3%81%AB%E5%86%85%E7%AA%93-agc-%E3%81%BE%E3%81%A9%E3%81%BE%E3%81%A9-%E3%82%92%E8%A8%AD%E7%BD%AE%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/&#34;&gt;別の記事&lt;/a&gt;
+としてまとめました、結論だけいうと設置して正解でした。&lt;/p&gt;
+&lt;h2 id=&#34;gpg-subkeyの更新&#34;&gt;GPG subkeyの更新&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.y103.org/post/2021/04/2021%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/&#34;&gt;約1年前&lt;/a&gt;
+にYubiKeyを購入して使い始めました。今でも続いるのですが、当時生成してYubiKeyに転送していたsubkeyが失効しました。何故か失効した状態でもsshの認証は成功していたため長らく気づいていなかったのですが、コミットに署名しようとしたところで失敗して初めて気がつきました。慌てて&lt;a href=&#34;https://www.osso.nl/blog/pgp-on-yubikey-refresh-expiry/&#34; target=&#34;_blank&#34;&gt;手順&lt;/a&gt;
+を見つけて事なきを得ましたが忘れないようにここにも書いておきます。鍵の更新に使った環境以外のところで公開鍵を更新するのを忘れていて頭を悩ませました。&lt;/p&gt;
+&lt;p&gt;基本的には上記の手順にあるとおりです。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一時的なGNUPGHOMEを作りmasterkeyとsubkeyをインポートする&lt;/li&gt;
+&lt;li&gt;既存のsubkeyの期限を延長する&lt;/li&gt;
+&lt;li&gt;翌年の為に延長されたsubkeyと既存のmasterkeyをバックアップする&lt;/li&gt;
+&lt;li&gt;新しい公開鍵をエクスポートする&lt;/li&gt;
+&lt;li&gt;subkeyを利用する環境で新しい公開鍵をインポートする&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ちなみにバックアップはBitwardenに保存しています。&lt;/p&gt;
+&lt;h1 id=&#34;買った物&#34;&gt;買った物&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ThinkBook 14 Gen3&lt;/li&gt;
+&lt;li&gt;セサミ4とWiFiモジュール&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ThinkBook 14 Gen3は兄弟からマイクロソフトオフィスが使える安めのノートPCが欲しいと言うことで選定しました。時期が良かったので楽天リーベイツの20％還元を始めて利用しました。感染症の状況もあって納期が大分先ですが無事届くことを願っています。&lt;/p&gt;
+&lt;p&gt;また、前々から興味があったスマートロックを導入しました。Qrioが高いので悩んでいましたが、社内で聞く限りセサミも比較的評判が良かったのでセサミを選定しました。オートロックが解錠からの経過時間でしか設定できない点を除けばほぼ完璧な製品だと感じています。&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;1時間も掛からず設置が終わりました。 &lt;a href=&#34;https://t.co/6lSAtvjY8F&#34;&gt;pic.twitter.com/6lSAtvjY8F&lt;/a&gt;&lt;/p&gt;&amp;mdash; silver_hawk(銀鷹) (@yutaka_j08) &lt;a href=&#34;https://twitter.com/yutaka_j08/status/1514187152577294343?ref_src=twsrc%5Etfw&#34;&gt;April 13, 2022&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;ThinkCentre M70q Tiny Gen 3の発売が始まりました。流石にまだまだたたき売りの気配はありませんが作業環境として導入したいところです。&lt;/p&gt;
+&lt;h1 id=&#34;読んだ書籍&#34;&gt;読んだ書籍&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;月姫 -A piece of blue glass moon- アンソロジーコミックSTAR&lt;/li&gt;
+&lt;li&gt;宝石商のメイド 2&lt;/li&gt;
+&lt;li&gt;九条の大罪 5&lt;/li&gt;
+&lt;li&gt;TYPE-MOONエース VOL.14&lt;/li&gt;
+&lt;li&gt;ある日突然、ギャルの許嫁ができた 1&lt;/li&gt;
+&lt;li&gt;ささやくように恋を唄う 6&lt;/li&gt;
+&lt;li&gt;空の境界 the Garden of sinners 11&lt;/li&gt;
+&lt;li&gt;わたしのお腹の責任取って! 1&lt;/li&gt;
+&lt;li&gt;ロード・エルメロイＩＩ世の事件簿 9&lt;/li&gt;
+&lt;li&gt;きみが死ぬまで恋をしたい 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ややTYPE-MOONが多い月と言えるでしょうか、それ以外は殆ど続けているシリーズの続刊が大半です。「ある日突然、ギャルの許嫁ができた」は絵に惹かれて買ったら小説だったのが想定外でしたが一通り読み切りました。最近Kindle Oasisの調子が悪いので買い換えたいところですが新しいモデルを出して欲しいところですね。風呂の中で使うことが多いのですが、防水と言う割には端の方に水が入って写らなくなる印象があります。(かつてそれで一度交換して貰いましたがそれでもダメでした。)&lt;/p&gt;
+</description>
+    </item>
+    
+    
+    
+    <item>
       <title>自宅に内窓 (AGC まどまど) を設置しました</title>
       <link>https://www.y103.org/post/2022/05/%E8%87%AA%E5%AE%85%E3%81%AB%E5%86%85%E7%AA%93-agc-%E3%81%BE%E3%81%A9%E3%81%BE%E3%81%A9-%E3%82%92%E8%A8%AD%E7%BD%AE%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 05 May 2022 06:25:39 +0100</pubDate>

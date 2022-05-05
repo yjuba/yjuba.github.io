@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="https://www.y103.org/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>2022年の04月を振り返る</title>
+</head>
+<body><header id="banner">
+    <h2><a href="https://www.y103.org/">www.y103.org</a></h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>2022年の04月を振り返る</h1>
+            <div>
+                <time>May 5, 2022</time>
+                </div>
+    </header><p>日本はゴールデンウィークですが世界的には情勢が落ち着かないままですね。すさまじい円安も進んでいるので公私共に悩みは増える一方です。</p>
+<h1 id="仕事関係">仕事関係</h1>
+<p>とりあえず期末期初のバタバタは落ち着いたと見ています。ゴールデンウィーク明けから改めて諸々走り出せるようにしっかりと休みたいところです。</p>
+<h1 id="プライベート">プライベート</h1>
+<h2 id="ff14">FF14</h2>
+<p>想定以上に歯応えのありそうな絶となっています。ようやくトップ層のクリアが出始めているので徐々に攻略情報も揃ってくるでしょう。いずれにせよ攻略には時間が掛かるので落ち着いて取り組んでいきたいと思っています。</p>
+<h2 id="内窓設置">内窓設置</h2>
+<p><a href="https://www.y103.org/post/2022/05/%E8%87%AA%E5%AE%85%E3%81%AB%E5%86%85%E7%AA%93-agc-%E3%81%BE%E3%81%A9%E3%81%BE%E3%81%A9-%E3%82%92%E8%A8%AD%E7%BD%AE%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/">別の記事</a>
+としてまとめました、結論だけいうと設置して正解でした。</p>
+<h2 id="gpg-subkeyの更新">GPG subkeyの更新</h2>
+<p><a href="https://www.y103.org/post/2021/04/2021%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">約1年前</a>
+にYubiKeyを購入して使い始めました。今でも続いるのですが、当時生成してYubiKeyに転送していたsubkeyが失効しました。何故か失効した状態でもsshの認証は成功していたため長らく気づいていなかったのですが、コミットに署名しようとしたところで失敗して初めて気がつきました。慌てて<a href="https://www.osso.nl/blog/pgp-on-yubikey-refresh-expiry/" target="_blank">手順</a>
+を見つけて事なきを得ましたが忘れないようにここにも書いておきます。鍵の更新に使った環境以外のところで公開鍵を更新するのを忘れていて頭を悩ませました。</p>
+<p>基本的には上記の手順にあるとおりです。</p>
+<ol>
+<li>一時的なGNUPGHOMEを作りmasterkeyとsubkeyをインポートする</li>
+<li>既存のsubkeyの期限を延長する</li>
+<li>翌年の為に延長されたsubkeyと既存のmasterkeyをバックアップする</li>
+<li>新しい公開鍵をエクスポートする</li>
+<li>subkeyを利用する環境で新しい公開鍵をインポートする</li>
+</ol>
+<p>ちなみにバックアップはBitwardenに保存しています。</p>
+<h1 id="買った物">買った物</h1>
+<ul>
+<li>ThinkBook 14 Gen3</li>
+<li>セサミ4とWiFiモジュール</li>
+</ul>
+<p>ThinkBook 14 Gen3は兄弟からマイクロソフトオフィスが使える安めのノートPCが欲しいと言うことで選定しました。時期が良かったので楽天リーベイツの20％還元を始めて利用しました。感染症の状況もあって納期が大分先ですが無事届くことを願っています。</p>
+<p>また、前々から興味があったスマートロックを導入しました。Qrioが高いので悩んでいましたが、社内で聞く限りセサミも比較的評判が良かったのでセサミを選定しました。オートロックが解錠からの経過時間でしか設定できない点を除けばほぼ完璧な製品だと感じています。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">1時間も掛からず設置が終わりました。 <a href="https://t.co/6lSAtvjY8F">pic.twitter.com/6lSAtvjY8F</a></p>&mdash; silver_hawk(銀鷹) (@yutaka_j08) <a href="https://twitter.com/yutaka_j08/status/1514187152577294343?ref_src=twsrc%5Etfw">April 13, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>ThinkCentre M70q Tiny Gen 3の発売が始まりました。流石にまだまだたたき売りの気配はありませんが作業環境として導入したいところです。</p>
+<h1 id="読んだ書籍">読んだ書籍</h1>
+<ul>
+<li>月姫 -A piece of blue glass moon- アンソロジーコミックSTAR</li>
+<li>宝石商のメイド 2</li>
+<li>九条の大罪 5</li>
+<li>TYPE-MOONエース VOL.14</li>
+<li>ある日突然、ギャルの許嫁ができた 1</li>
+<li>ささやくように恋を唄う 6</li>
+<li>空の境界 the Garden of sinners 11</li>
+<li>わたしのお腹の責任取って! 1</li>
+<li>ロード・エルメロイＩＩ世の事件簿 9</li>
+<li>きみが死ぬまで恋をしたい 5</li>
+</ul>
+<p>ややTYPE-MOONが多い月と言えるでしょうか、それ以外は殆ど続けているシリーズの続刊が大半です。「ある日突然、ギャルの許嫁ができた」は絵に惹かれて買ったら小説だったのが想定外でしたが一通り読み切りました。最近Kindle Oasisの調子が悪いので買い換えたいところですが新しいモデルを出して欲しいところですね。風呂の中で使うことが多いのですが、防水と言う割には端の方に水が入って写らなくなる印象があります。(かつてそれで一度交換して貰いましたがそれでもダメでした。)</p>
+</article>
+
+        </main><footer id="footer">
+    www.y103.org is licensed under CC-BY-4.0.
+</footer>
+</body>
+</html>

@@ -6,9 +6,49 @@
     <description>Recent content on www.y103.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 17 Dec 2022 13:46:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Dec 2022 09:09:15 +0000</lastBuildDate>
     
 	<atom:link href="https://www.y103.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>2022年の12月を振り返る</title>
+      <link>https://www.y103.org/post/2022/12/2022%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
+      <pubDate>Sat, 31 Dec 2022 09:09:15 +0000</pubDate>
+      
+      <guid>https://www.y103.org/post/2022/12/2022%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
+      <description>&lt;p&gt;年内に終わらせようと慌てて環境構築から着手しました。今年の年末は何故か年末感を全く感じていません。&lt;/p&gt;
+&lt;h1 id=&#34;仕事関係&#34;&gt;仕事関係&lt;/h1&gt;
+&lt;p&gt;前半は何をしていたか忘れましたが、中盤は恒例の京都出張でした。終盤は、どうせ余るからということで12/24 ~ 01/09の17連休を生成しました。最後の最後に、先月くらいから取りかかっている案件で大きなちゃぶ台返しがあったので年始からまた走り回る必要がありそうです。&lt;/p&gt;
+&lt;h1 id=&#34;プライベート&#34;&gt;プライベート&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.y103.org/post/2022/12/%E4%BA%AC%E9%83%BD%E8%A6%B3%E5%85%892022/&#34;&gt;別途書いた京都旅行の記事&lt;/a&gt;
+がほぼ全てです。年始は初売りと遅めの初詣に併せてすみだ水族館も行っておきたいと思っています。&lt;/p&gt;
+&lt;h2 id=&#34;ff14&#34;&gt;FF14&lt;/h2&gt;
+&lt;p&gt;相変わらず低空飛行を継続中です。6.3絶はオメガに決まったようですが、今回は見送りで6.5でチャレンジしようと思います。素材は溜まってきたのでいい加減金策潜水艦を完成させるべきでしょう。&lt;/p&gt;
+&lt;h2 id=&#34;サンブレイク&#34;&gt;サンブレイク&lt;/h2&gt;
+&lt;p&gt;年末年始休暇に入ってから頑張っており、何とか傀異研究レベルを200にしました。暫くは錬成を回すのが主な仕事になりそうです。&lt;/p&gt;
+&lt;h2 id=&#34;作業環境の更新&#34;&gt;作業環境の更新&lt;/h2&gt;
+&lt;p&gt;記事の冒頭にも書きましたが、長らくRaspberry Pi4の上で記事を書いていたのですが、ようやくThinkCenterのセットアップを終えたのでDev Container上の環境に移行しました。Hugoの入った公式のコンテナイメージを見つけられなかったのですが、VSCodeからDev Containerの設定を作る際にHugoの選択肢があったのでそれで環境を作っています。&lt;/p&gt;
+&lt;h1 id=&#34;2022年に学んで良かった技術&#34;&gt;2022年に学んで良かった技術&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://voluntas.medium.com/2022-%E5%B9%B4%E3%81%AB%E5%AD%A6%E3%82%93%E3%81%A7%E8%89%AF%E3%81%8B%E3%81%A3%E3%81%9F%E6%8A%80%E8%A1%93-321848e1b09c&#34; target=&#34;_blank&#34;&gt;こちらの記事&lt;/a&gt;
+に触発されました。Twitterでも色んな方が発言されていたように思います。&lt;/p&gt;
+&lt;p&gt;厳密に今年学んだ物か怪しいですが、&lt;a href=&#34;https://code.visualstudio.com/docs/devcontainers/containers&#34; target=&#34;_blank&#34;&gt;VSCodeのDev Contaner&lt;/a&gt;
+を一番便利に使っていると思います。今年は既存の知識でやりくりしてしまった気がするので、来年はもう少し新し事を学ぶ必要があるでしょう。&lt;/p&gt;
+&lt;h1 id=&#34;2022年の振り返り&#34;&gt;2022年の振り返り&lt;/h1&gt;
+&lt;p&gt;大分色んな事を忘れている気がします。来年はもう少し覚えていられるように日記でも付けた方が良いのかも知れません。振り返り記事を流し見しながら印象に残っていることを箇条書きにしておきます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;まさか令和になって常任理事国が他国へ侵攻するとは思わなかった&lt;/li&gt;
+&lt;li&gt;絶竜詩戦争は今年のことだとは思えない位以前に感じます&lt;/li&gt;
+&lt;li&gt;水出しコーヒーは大変美味しかったので来年も継続します&lt;/li&gt;
+&lt;li&gt;誘われて手を出したサンブレイクはかなり良かった&lt;/li&gt;
+&lt;li&gt;まさか令和になって現職議員（元総理大臣）が暗殺されるとは思わなかった&lt;/li&gt;
+&lt;li&gt;リコリス・リコイルが最高だった、まだ1クールならぶっ通しで見られる&lt;/li&gt;
+&lt;li&gt;Androidに乗り換えた、現代のAndroidは思った以上に快適で驚いた&lt;/li&gt;
+&lt;li&gt;久々に行った水族館は良かったので来年も継続する&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     
     

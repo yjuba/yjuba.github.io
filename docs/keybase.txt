@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/yjuba
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.y103.org
+  * I am yjuba (https://keybase.io/yjuba) on keybase.
+  * I have a public key ASDYDerS8VfIs4ET77QZsgdma6sWXhxHQZgeF3VbhaCvJQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d80dead2f157c8b38113efb419b207666bab165e1c4741981e17755b85a0af250a",
+      "host": "keybase.io",
+      "kid": "0120d80dead2f157c8b38113efb419b207666bab165e1c4741981e17755b85a0af250a",
+      "uid": "d79d8fc0906913d3d8cae4eeee5efa19",
+      "username": "yjuba"
+    },
+    "merkle_root": {
+      "ctime": 1672652329,
+      "hash": "1848e29f7658bef0dfce4eb492fdfff1a428a824a07a9ff08a55981b76cb131f405eefe5ab3e06fa964de3a6fe80fe42544d676d91e6d2fd3b422afa0e2c6d46",
+      "hash_meta": "857fb7b420e58f72ce989f1a206cf286d6869a5bf1458b755b488ea1697fb95d",
+      "seqno": 23798588
+    },
+    "service": {
+      "entropy": "tJXxUEej0q9sRiwHohz7i5Fm",
+      "hostname": "www.y103.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1672652350,
+  "expire_in": 504576000,
+  "prev": "d967bf1ea684230a5432d3638d98c8571bda0d55b8d047eb0b09b2b3aaa754ac",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2A3q0vFXyLOBE++0GbIHZmurFl4cR0GYHhd1W4WgryUKp3BheWxvYWTESpcCD8Qg2We/HqaEIwpUMtNjjZjIVxvaDVW40EfrCwmys6qnVKzEIJVPhagPjU/r8GEeq71CN18LucGDAFSbTXP2HOYfd+kcAgHCo3NpZ8RAzIvP8WdAGArYna0Bl/R2X7N5d3UqjdMywcpufvUd036L6yXxRSc/76j7gmcttpKb1b0uo/hBcu3/qZy4DPQYBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEnZ8gdw+23paAfeqvc9jVxbEI25fhfGc2V2eymvMK35o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yjuba
+
+==================================================================

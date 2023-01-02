@@ -4,6 +4,7 @@ defaultContentLanguage = "ja"
 title = "www.y103.org"
 theme = "etch"
 publishDir = "docs"
+staticDir = ["static"]
 
 pygmentsCodefences = true
 pygmentsUseClasses = true

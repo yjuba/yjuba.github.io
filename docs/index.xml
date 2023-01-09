@@ -6,9 +6,40 @@
     <description>Recent content on www.y103.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 31 Dec 2022 09:09:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Jan 2023 14:32:07 +0000</lastBuildDate>
     
 	<atom:link href="https://www.y103.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    <item>
+      <title>gpg-agentがWin32-OpenSSHのエミュレーションをサポートした</title>
+      <link>https://www.y103.org/post/2023/01/gpg-agent%E3%81%8Cwin32-openssh%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F/</link>
+      <pubDate>Mon, 09 Jan 2023 14:32:07 +0000</pubDate>
+      
+      <guid>https://www.y103.org/post/2023/01/gpg-agent%E3%81%8Cwin32-openssh%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F/</guid>
+      <description>&lt;h2 id=&#34;前提&#34;&gt;前提&lt;/h2&gt;
+&lt;p&gt;日常的にYubiKeyに入れたPGP鍵（認証鍵）を使ってsshしているのですが、GnuPGの変更によって構成が変化したため以下にまとめます。鍵はsshにおける公開鍵認証とgitのコミットへの署名に利用しています。なお、ホストのOSにはWindows10を使用しており、実際の開発や作業はWSL2もしくは仮想マシン上のLinuxで行っています。&lt;/p&gt;
+&lt;p&gt;当初はgpg-agentをgpg-agentとして利用していました。その際には&lt;a href=&#34;https://github.com/rupor-github/win-gpg-agent&#34; target=&#34;_blank&#34;&gt;win-gpg-agent&lt;/a&gt;
+を使用して各種の問題を回避していました。ところが、2022年の9月にサポートが終了したため乗り換え先を探していました。&lt;/p&gt;
+&lt;h2 id=&#34;本文&#34;&gt;本文&lt;/h2&gt;
+&lt;p&gt;GnuPGのバージョン2.4.0において、gpg-agentが&lt;a href=&#34;https://github.com/PowerShell/Win32-OpenSSH&#34; target=&#34;_blank&#34;&gt;Win32-OpenSSH&lt;/a&gt;
+のエミュレーションをサポートしました。コミットは以下のURLになります。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dev.gnupg.org/rGc51139f2bc546c6bd4548e24a604f2178a2b8366&#34; target=&#34;_blank&#34;&gt;https://dev.gnupg.org/rGc51139f2bc546c6bd4548e24a604f2178a2b8366&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;enable-win32-openssh-support&lt;/code&gt; のオプションを伴って起動されたgpg-agentは &lt;code&gt;\\.\pipe\openssh-ssh-agent&lt;/code&gt; という名前付きパイプを生成します。Win32-OpenSSHは名前付きパイプを経由してgpg-agentとSSH Agent Protocolでやりとりをすることができます。（補足: 「SSH Agent Proocolでやりとりする」と記載したとおり、このときgpg-agentはssh-agentとして振る舞います。）&lt;/p&gt;
+&lt;p&gt;これによって、現在の私の環境は以下の図のようになりました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.y103.org/enable-win32-openssh-support.png&#34; alt=&#34;構成図&#34;&gt;&lt;/p&gt;
+&lt;p&gt;YubiKeyに入っている認証鍵をgpg-agent経由で利用する形となっています。また、認証鍵を利用する際にはYubiKeyへのタッチが必要となるように設定しています。これは、agent forwardingを利用した際に、転送先のホスト上で意図しない鍵の利用を防ぐ為にこのように設定しています。&lt;/p&gt;
+&lt;p&gt;また、WSL2上でも同様に鍵を扱いたかったため、npiperelayとsocatを利用して名前付きパイプへの疎通を確保しています。本当はこのワークアラウンドも避けたいのですが、現状回避方法を発見できなかったためこのようにしています。&lt;/p&gt;
+&lt;p&gt;ちなみに、元々は&lt;a href=&#34;https://keens.github.io/blog/2021/03/23/yubikeywotsukau_openpghen/&#34; target=&#34;_blank&#34;&gt;知人の投稿&lt;/a&gt;
+に惹かれてYubiKeyにPGP鍵を入れて運用を始めたのですが、結果としてPGP鍵はSSH鍵として利用されることとなってしまいました。本当ははssh-agentとしてではなく、gpg-agentをgpg-agentとして運用したいのですが、一旦は運用のやりやすさを優先して現状の構成としています。&lt;/p&gt;
+&lt;h2 id=&#34;補足&#34;&gt;補足&lt;/h2&gt;
+&lt;p&gt;なぜ、こんなに面倒なことになっているのかと思われるかも知れませんが、Windowsにおけるssh-agent事情は混沌を極めているという前提があります。詳細は以下のURLにまとめられています。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://qiita.com/slotport/items/e1d5a5dbd3aa7c6a2a24&#34; target=&#34;_blank&#34;&gt;https://qiita.com/slotport/items/e1d5a5dbd3aa7c6a2a24&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     
     

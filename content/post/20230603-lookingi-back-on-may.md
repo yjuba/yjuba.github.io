@@ -2,7 +2,7 @@
 title: "2023年の05月を振り返る"
 description: "2023年の05月を振り返る"
 date: 2023-06-03T09:20:38Z
-draft: true
+draft: false
 author: "yjuba"
 categories:
   - "振り返り"

@@ -12,6 +12,88 @@
     
     
     <item>
+      <title>2024年の01月を振り返る</title>
+      <link>https://www.y103.org/post/2024/02/2024%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
+      <pubDate>Sun, 18 Feb 2024 13:27:57 +0000</pubDate>
+      
+      <guid>https://www.y103.org/post/2024/02/2024%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
+      <description>&lt;p&gt;油断をしていたら1月の振り返りを終える前に2月が終わりそうになっていました。1月は前半は長めの年末年始休暇でしたが地震もあり世間はバタバタしていたように感じました。&lt;/p&gt;
+&lt;p&gt;仕事に関しては主務が何か分からない程度には色々なことを進めていますが、トラブルシューティングを通じてLXDやsystemdに少し詳しくなった気がします。&lt;/p&gt;
+&lt;h2 id=&#34;1月にやりたかったこと&#34;&gt;1月にやりたかったこと&lt;/h2&gt;
+&lt;h3 id=&#34;確定申告の準備&#34;&gt;確定申告の準備&lt;/h3&gt;
+&lt;p&gt;確定申告そのものを終わらせました、幸い今年も多少は還付されるようです。もう少しすると固定資産税の支払いが来るので還付されたと思ったらすぐに別の税金として納付するだけなのですが。&lt;/p&gt;
+&lt;h3 id=&#34;新nisaへの資産の移管&#34;&gt;新NISAへの資産の移管&lt;/h3&gt;
+&lt;p&gt;こちらも無事完了しました。丁度良いタイミングだったので、保有している有価証券の売却と現金比率の調整も実施しました。今まではほぼ全ての資産を有価証券にしていた関係で手元の現金が心許なかったのですが、多少の出費には耐えられる程度の現金を手元に残すことにしました。新NISAについては成長投資枠は年始に一括で、積み立て投資枠については24分割して月に二回ずつ買い付けています。クレカ決済の限度額が十万円になれば一回にまとめてしまうつもりです。早く改正してほしい。&lt;/p&gt;
+&lt;h2 id=&#34;2月にやりたいこと&#34;&gt;2月にやりたいこと&lt;/h2&gt;
+&lt;h3 id=&#34;読書量を増やす&#34;&gt;読書量を増やす&lt;/h3&gt;
+&lt;p&gt;これと言って思いつかなかったのですが、1月は多少は読みましたが思ったほどではないので2月は少しは増やしたい所です。&lt;/p&gt;
+&lt;h2 id=&#34;仕事&#34;&gt;仕事&lt;/h2&gt;
+&lt;p&gt;冒頭でも少し触れましたが、主務が分からない程度に色々なことを進めています。今はマネージャと言われるような立場ですが、根がインフラエンジニアという職業柄トラブルシューティングや問題解決から学ぶことが多いなと今更ながら思います。&lt;/p&gt;
+&lt;p&gt;今月は二件ほど記憶に残っている物があるので紹介します。&lt;/p&gt;
+&lt;h3 id=&#34;1-特定条件下でlxdのコンテナがipアドレスを正常に取得できない&#34;&gt;1. 特定条件下でLXDのコンテナがIPアドレスを正常に取得できない&lt;/h3&gt;
+&lt;p&gt;下記の組み合わせでLXDコンテナを起動した際に、ゲストがIPアドレスを取得できないという問題に遭遇しました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ホスト: Ubuntu Jammy  (22.04)&lt;/li&gt;
+&lt;li&gt;ゲスト: Ubuntu Xenial (16.04)、CentOS 7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最終的には以下の記事にたどり着き、ホスト側のsystemdが使用しているcgroupのバージョンを2から1にすることで問題が解消しました。詳細までは追っていませんが、ゲストのsystemdが期待しているcgroupのバージョンとホストが使用しているsystemdが使用しているcgroupのバージョンが一致しないことが原因のようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306&#34; target=&#34;_blank&#34;&gt;https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;当初はXenialのゲストで遭遇した問題でしたが、切り分けのため他のバージョンのUbuntuや他のディストリビューションを試したことで切り分けが進み上記の記事に行き着くことができました。&lt;/p&gt;
+&lt;h3 id=&#34;2-systemd管理下のデーモンから起動したコマンドが特権を行使できない&#34;&gt;2. systemd管理下のデーモンから起動したコマンドが特権を行使できない&lt;/h3&gt;
+&lt;p&gt;こちらについては担当外の所からお鉢が回ってきた問題となりますが、面白かったので紹介します。&lt;/p&gt;
+&lt;p&gt;systemd管理下のデーモンから &lt;code&gt;sudo foo&lt;/code&gt; の様に特権を必要とするコマンドを実行したところ、以下の様なエラーが表示されコマンドの実行に失敗するという問題でした。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo: The &amp;#34;no new privileges&amp;#34; flag is set, which prevents sudo from running as root.
+sudo: If sudo is running in a container, you may need to adjust the container configuration to disable the flag.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;結論からいうと、 &lt;code&gt;NoNewPrivileges&lt;/code&gt; を無効化する為に関連する他の設定を変更する必要があるという問題でした。Unitファイルの &lt;code&gt;NoNewPrivileges&lt;/code&gt; を &lt;code&gt;false&lt;/code&gt; したにも関わらず、起動後のプロセスは &lt;code&gt;NoNewPrivs: 1&lt;/code&gt; だったので首を傾げてしまいました。詳細については以下のドキュメントに記載がありますが、特権を取得できると他の制限を課している意味が無くなるため排他的な設定になっていると理解しています。シンプルではありますが極めて有用な設定項目ではあると感じました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.freedesktop.org/software/systemd/man/247/systemd.exec.html#Security&#34; target=&#34;_blank&#34;&gt;https://www.freedesktop.org/software/systemd/man/247/systemd.exec.html#Security&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;年を追うごとに、systemd管理下のプロセスにはコンテナの如く様々な制約を課すことができるようになっています。計算資源の割り当てを制限できるのは知っていたのですが、今回の &lt;code&gt;NoNewPrivileges&lt;/code&gt; をはじめここまで細かい制約を課すことができるようになっていたのは今回の調査を通じて初めて知りました。&lt;/p&gt;
+&lt;h2 id=&#34;ff14&#34;&gt;FF14&lt;/h2&gt;
+&lt;p&gt;マンダヴィルウェポンの関係で旧固定のメンバーとエキルレを延々と回しています。仕事の状況は落ち着いていませんが、絶オメガをやるつもりならそろそろ心づもりをするべきだろうと思っています。&lt;/p&gt;
+&lt;h2 id=&#34;買った物&#34;&gt;買った物&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;携帯コインホルダー&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;何かの配信で見かけて、月に一回程度現金を持ち歩く必要があるので購入しました。普段は紙幣とカードをマネークリップに入れて持ち歩いているのですが、硬貨の取り扱いに困っていたのでとても助かってます。&lt;/p&gt;
+&lt;h2 id=&#34;買った本&#34;&gt;買った本&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;魔法少女リリカルなのはViVid(18)&lt;/li&gt;
+&lt;li&gt;魔法少女リリカルなのはViVid(19)&lt;/li&gt;
+&lt;li&gt;魔法少女リリカルなのはViVid(20)&lt;/li&gt;
+&lt;li&gt;狼は眠らない　（1）&lt;/li&gt;
+&lt;li&gt;狼は眠らない　（2）&lt;/li&gt;
+&lt;li&gt;狼は眠らない　（3）&lt;/li&gt;
+&lt;li&gt;ロード・エルメロイII世の冒険 ７ フェムの船宴(中)&lt;/li&gt;
+&lt;li&gt;ロード・エルメロイＩＩ世の事件簿　（11）&lt;/li&gt;
+&lt;li&gt;「おかえり、パパ」【電子単行本】　１&lt;/li&gt;
+&lt;li&gt;「おかえり、パパ」【電子単行本】　２&lt;/li&gt;
+&lt;li&gt;すごい女の子がかわいいやつ（2,5）&lt;/li&gt;
+&lt;li&gt;女の子がすこぶるかわいいやつ（3）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（１）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（２）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（３）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（４）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（５）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（６）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（７）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（８）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（９）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（１０）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（１１）&lt;/li&gt;
+&lt;li&gt;葬送のフリーレン（１２）&lt;/li&gt;
+&lt;li&gt;幼女戦記(29)&lt;/li&gt;
+&lt;li&gt;サラリーマンが異世界に行ったら四天王になった話 8&lt;/li&gt;
+&lt;li&gt;イタリア人の女の子が居候することになった　3&lt;/li&gt;
+&lt;li&gt;敗者のゲーム［原著第８版］&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;種別を問わず読書量を増やそうということで色々買っています。厳密には一月中には読んでいないのですが、葬送のフリーレンはとても楽しめました。あと、新旧NISAに資産の殆どを突っ込んでいる割には読んだことが無かったので敗者のゲームも読んでいます。色んな動画やブログで述べられている様な事がしつこいくらい繰り返し書かれている良い書籍だと思います。&lt;/p&gt;
+</description>
+    </item>
+    
+    
+    
+    <item>
       <title>2023年の12月と2023年全体を振り返る</title>
       <link>https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
       <pubDate>Thu, 04 Jan 2024 12:48:45 +0000</pubDate>

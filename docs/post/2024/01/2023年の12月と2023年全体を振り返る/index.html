@@ -1,24 +1,277 @@
-<!DOCTYPE html>
-<html lang="ja"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="https://www.y103.org/favicon.ico">
-    
-    <link rel="stylesheet" href="/css/style.min.css">
+<!doctype html>
 
-    <link rel="canonical" href="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" />
-    <title>2023年の12月と2023年全体を振り返る</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="ja"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>2023年の12月と2023年全体を振り返る - www.y103.org</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="母校での講義を無事終えてそのまま年末年始休暇に突入していました。世間的に年末になるまでは若干の割り込みがありましたが、それを除くと仕事という意味では比較的平和な年末年始となりました。
+一方で、世間では年始早々から地震、航空機事故、火災、普段使っている路線で刃物を振り回す事件と良くない話ばかりが続いています。元旦に家を出て散歩ついでに初詣に行こうとマンションのエレベーターに乗っているタイミングで地震に遭遇しました。新年早々縁起が悪い感じがしたので珍しく破魔矢を購入しました。大なり小なり効果があれば良いなと思っています。
+2024年にやりたいこと(？) 健康状態を改善する 致命的に悪い箇所があるわけでは無いのですが、年々健康であることの重要性を痛感しています。とりあえずは、減量が一番手っ取り早い上に重要な項目なので頑張ります。
+2023年は日課のウォーキングをサボり気味だったため、2022年に比べてFitbitで計測されたゾーン時間が1500分ほど減っていました。まずは年8000分 (22分 x 365日) を目標として頑張ります。
+集中力を高める 特に直近の二、三年は個々の物事に集中して取り組めていないような気がしています。マルチタスクといえば聞こえは良いですが、コンテキストスイッチが激しすぎるため体感では「仕事に集中できている時間 &lt; コンテキストスイッチのコスト」となっています。
+幸い仕事にも私生活にも致命的な影響は無いのですが、集中して取り組めばもっと良い結果が得られるのでは無いかと感じることが増えてきたので、改善できるように意識して行動しようと思っています。あくまでそう感じているだけなので、集中して取り組めた所で何も変わらない可能性も無きにしも非ずではありますが。
+まずは「集中するときはSlackを落として各種通知も無効にする」、「ポモドーロ・テクニックを取り入れてみる」の二点から着手してみようと思います。
+読書量を増やす 活字の書籍にしてもその他の書籍にしても読書量がかなり減っていると感じています。書籍関しては金に糸目をつけないことにしているのですが、如何せん欲しい書籍や面白そうな書籍の情報が目に入っていないので、今年は意識して書籍と向き合いたいと思います。
+とりあえず、新刊の情報は勝手に手元に集まるような仕組みを作ろうと思います。また、ラムダノートの鹿野さんが管理されている本とかを読む からも取り入れたいと思います。特に、技術書以外の活字については本当に目にする機会が少ないのでそのあたりを補えればと思っています。
+WebAssemblyに手を出してみる WASI (WebAssembly System Interface) が出てきた事で俄然興味が増してきました。最近は面白そうだなという興味で止まってしまって手を動かさないことが増えたので、一年にせめて一つくらいは手を動かしてみようと思います。
+2023年に学んで良かった技術や知識 シングルサインオン 良し悪し以前の問題で、2023年はシングルサインオンを実現するための諸々に取り組んでいたのでこれが一番記憶に残っています。
+SAML/OIDC シングルサインオンを実現するために長らく向き合っていました。多少は慣れてきた物のまだまだ腹落ちには遠い状態なので引き続き学んでいきたいと思っています。
+Keycloak SAML/OIDCの実装として使用しています。個人的には若干癖のある実装だと感じていますが、SAML/OIDCの両方に対応した実装として重宝しています。
+負荷試験 認証の無いWebサイトやAPIに対する負荷試験の経験はありましたが、SAML/OIDCによる認証が必要なWebサイトに対する負荷試験を実施したのは初めてでした。当初はPlaywright やk6 browser で実施しようとしていましたが、なかなか想定する負荷を生成することができず苦労しました。
+最終的に、k6 browserは使わず素のk6でフォームに無理矢理認証に必要な値を埋める事で負荷試験を完遂しました。多要素認証の対応も必要だったのですが、幸いTOTPが利用可能だったためk6上でTOTPの値を生成しています。Passkeyは今の所対応できていませんが、将来的には何とかしたいと思っています。
+1月にやりたいこと 確定申告の準備 ふるさと納税が主なので大した手間では無いのですが早めに終わらせておきたいと思っています。
+新NISAへの資産の移管 新NISAの開始に伴い旧NISAが廃止されました。2018年から旧NISAをやっていたため、当初はロールオーバーで20年放置する予定だった有価証券が毎年特定口座に払い出されます。色々考えたのですが、商品を若干変更して払い出された分は全額売却してそのまま新NISAで買い直すことにしました。
+12月にやりたかったこと ふるさと納税限度額の使い切り 無事使い切りました。最後の滑り込みは例年貰っている冷凍ブリしゃぶに加えて福砂屋の五三焼き貰いました。福砂屋のカステラは最近週末の茶菓子としてよく買っているので選びました。
+仕事 12月は元々半分は休みだったこと、11月からそれに備えていたこともあって細かい割り込みを除けば比較的平和な月だったと思います。相変わらずその時々で立場や仕事のレイヤーの切り替わりが激しいので、個々の物事に集中して取り組める状態を作っていきたいと思っています。
+FF14 例によって年越しはリムサで迎えました。それ以外は潜水艦くらいしかやっていないので大分モチベーションが低下しています。
+買った物 調べたところ何も購入していませんでした･･･
+買った本 悪役令嬢転生おじさん(6) 株式会社 神かくし(5) 株式会社 神かくし(4) 株式会社 神かくし(3) はるかリセット　13 月華国奇医伝　第四巻 このはな綺譚 (15) ざつ旅-That&rsquo;s Journey- １０ 便利屋斎藤さん、異世界に行く １０ 九条の大罪（１０） ダンジョン飯 14巻 ダンジョン飯 13巻 空の境界　ｔｈｅ　Ｇａｒｄｅｎ　ｏｆ　ｓｉｎｎｅｒｓ（１２） 地雷なんですか？地原さん(4) 国境のエミーリャ（１０） 宇崎ちゃんは遊びたい！ 11 帰ってください！ 阿久津さん　（８） 世界一流エンジニアの思考法 今月は書籍を購入していました。完結を迎えた作品も増えてきたのでそろそろ新しい作品にも手を出したいと思っています。" />
+  <meta name="author" content="yjuba" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/android-chrome-512x512.png" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.y103.org/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://www.y103.org/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://www.y103.org/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.y103.org/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.124.1">
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="2023年の12月と2023年全体を振り返る">
+<meta itemprop="description" content="2023年の12月と2023年全体を振り返る"><meta itemprop="datePublished" content="2024-01-04T12:48:45+00:00" />
+<meta itemprop="dateModified" content="2024-01-04T12:48:45+00:00" />
+<meta itemprop="wordCount" content="93">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="2023年の12月と2023年全体を振り返る" />
+<meta property="og:description" content="2023年の12月と2023年全体を振り返る" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-01-04T12:48:45+00:00" />
+<meta property="article:modified_time" content="2024-01-04T12:48:45+00:00" />
+
+  
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="2023年の12月と2023年全体を振り返る"/>
+<meta name="twitter:description" content="2023年の12月と2023年全体を振り返る"/>
+
+  
+  
+  
+  <link rel="canonical" href="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" />
+  
+  
 </head>
-<body><header id="banner">
-    <h2><a href="https://www.y103.org/">www.y103.org</a></h2>
-    <nav>
-        <ul>
-            
-        </ul>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://www.y103.org/"
+      >www.y103.org</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/yutaka_j08"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/yjuba"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
     </nav>
+    
+  </div>
 </header>
-<main id="content">
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
 <article>
     <header id="post-header">
         <h1>2023年の12月と2023年全体を振り返る</h1>
@@ -92,8 +345,26 @@
 <p>また、唯一の活字の本である「世界一流エンジニアの思考法」は面白く読むことができました。全部が全部取り入れられるとは思っていませんが、活かせそうな部分は活かしていきます。英語はさっぱりダメですが、人生で一度くらいは外資企業で働いてみるのも異文化を知るという意味では面白いのだろうなと思います。</p>
 </article>
 
-        </main><footer id="footer">
-    www.y103.org is licensed under CC-BY-4.0.
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://www.y103.org/">www.y103.org</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
 </footer>
-</body>
+
+  </body>
 </html>

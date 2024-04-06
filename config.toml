@@ -1,38 +1,36 @@
 baseURL = "https://www.y103.org/"
+author = "yjuba"
+copyright = "www.y103.org is licensed under CC-BY-4.0."
+paginate = 9
 languageCode = "ja"
 defaultContentLanguage = "ja"
+enableInlineShortcodes = true
+
+theme = "paper"
 title = "www.y103.org"
-theme = "etch"
+
 publishDir = "docs"
 staticDir = ["static"]
 
-pygmentsCodefences = true
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-
-hasCJKLanguage = true
-# googleAnalytics = "UA-176946145-1"
-
-
-[author]
-  name = "yjuba"
-
 [params]
-  dateformat = "2006/01/02"
-  copyright = "www.y103.org is licensed under CC-BY-4.0."
-  highlight = true
+color = "linen"
+
+twitter = "yutaka_j08"
+github = "yjuba"
+
+avatar = "https://www.y103.org/android-chrome-512x512.png"
+name = "yjuba"
+bio = "内製クラウドの雲の中を飛んでいる鳥類。嵐に巻き込まれたので情シスの木で雨宿り中。"
 
 [permalinks]
-  post = "/post/:year/:month/:title/"
-
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-  [privacy.youtube]
-    privacyEnhanced = true
+post = "/post/:year/:month/:title/"
 
 [markup]
-  [markup.tableOfContents]
-    startLevel = 1
-  [markup.goldmark.renderer]
-    unsafe = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[services]
+
+[services.twitter]
+disableInlineCSS = true

@@ -1,343 +1,446 @@
-<!DOCTYPE html>
-<html lang="ja"><head>
-	<meta name="generator" content="Hugo 0.115.0">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="https://www.y103.org/favicon.ico">
-    <link rel="alternate" type="application/rss+xml" href="https://www.y103.org/index.xml" title="www.y103.org">
-    
-    <link rel="stylesheet" href="/css/style.min.css">
+<!doctype html>
 
-    <link rel="canonical" href="https://www.y103.org/" />
-    <title>www.y103.org</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="ja"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>www.y103.org</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="A personal blog"
+  />
+  <meta name="author" content="yjuba" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/android-chrome-512x512.png" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.y103.org/github.svg" />
+  
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://www.y103.org/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.y103.org/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.124.1">
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="www.y103.org">
+<meta itemprop="description" content="">
+  
+  <meta property="og:title" content="www.y103.org" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.y103.org/" />
+
+  
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="www.y103.org"/>
+<meta name="twitter:description" content=""/>
+
+  
+  
+  <link
+    rel="alternate"
+    type="application/rss&#43;xml"
+    href="https://www.y103.org/index.xml"
+    title="www.y103.org"
+  />
+  
+  
+  <link rel="canonical" href="https://www.y103.org/" />
+  
+  
 </head>
-<body><header id="banner">
-    <h2><a href="https://www.y103.org/">www.y103.org</a></h2>
-    <nav>
-        <ul>
-            
-        </ul>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://www.y103.org/"
+      >www.y103.org</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/yutaka_j08"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/yjuba"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
     </nav>
+    
+  </div>
 </header>
-<main id="content">
-<h3>Posts</h3>
-<ul id="posts">
-    <li>
-    <a href="https://www.y103.org/post/2024/04/2024%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2024年の03月を振り返る
-        <small><time>Apr 6, 2024</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2024/03/2024%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2024年の02月を振り返る
-        <small><time>Mar 3, 2024</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2024/02/2024%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2024年の01月を振り返る
-        <small><time>Feb 18, 2024</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の12月と2023年全体を振り返る
-        <small><time>Jan 4, 2024</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/12/2023%E5%B9%B4%E3%81%AE11%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の11月を振り返る
-        <small><time>Dec 24, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/11/2023%E5%B9%B4%E3%81%AE10%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の10月を振り返る
-        <small><time>Nov 5, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/10/2023%E5%B9%B4%E3%81%AE09%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の09月を振り返る
-        <small><time>Oct 15, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/09/2023%E5%B9%B4%E3%81%AE08%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の08月を振り返る
-        <small><time>Sep 12, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/08/2023%E5%B9%B4%E3%81%AE07%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の07月を振り返る
-        <small><time>Aug 8, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/07/2023%E5%B9%B4%E3%81%AE06%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の06月を振り返る
-        <small><time>Jul 1, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/06/2023%E5%B9%B4%E3%81%AE05%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の05月を振り返る
-        <small><time>Jun 3, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/06/2023%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の04月を振り返る
-        <small><time>Jun 3, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/04/2023%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の03月を振り返る
-        <small><time>Apr 1, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/03/2023%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の02月を振り返る
-        <small><time>Mar 26, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/02/2023%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2023年の01月を振り返る
-        <small><time>Feb 5, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2023/01/gpg-agent%E3%81%8Cwin32-openssh%E3%81%AE%E3%82%A8%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F/">
-        gpg-agentがWin32-OpenSSHのエミュレーションをサポートした
-        <small><time>Jan 9, 2023</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/12/2022%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の12月を振り返る
-        <small><time>Dec 31, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/12/%E4%BA%AC%E9%83%BD%E8%A6%B3%E5%85%892022/">
-        京都観光(2022)
-        <small><time>Dec 17, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/12/2022%E5%B9%B4%E3%81%AE11%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の11月を振り返る
-        <small><time>Dec 3, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/11/2022%E5%B9%B4%E3%81%AE10%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の10月を振り返る
-        <small><time>Nov 20, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/10/2022%E5%B9%B4%E3%81%AE09%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の09月を振り返る
-        <small><time>Oct 20, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/09/2022%E5%B9%B4%E3%81%AE08%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の08月を振り返る
-        <small><time>Sep 19, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/08/2022%E5%B9%B4%E3%81%AE07%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の07月を振り返る
-        <small><time>Aug 7, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/08/2022%E5%B9%B4%E3%81%AE06%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の06月を振り返る
-        <small><time>Aug 7, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/06/2022%E5%B9%B4%E3%81%AE05%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の05月を振り返る
-        <small><time>Jun 25, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/05/2022%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の04月を振り返る
-        <small><time>May 5, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/05/%E8%87%AA%E5%AE%85%E3%81%AB%E5%86%85%E7%AA%93-agc-%E3%81%BE%E3%81%A9%E3%81%BE%E3%81%A9-%E3%82%92%E8%A8%AD%E7%BD%AE%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/">
-        自宅に内窓 (AGC まどまど) を設置しました
-        <small><time>May 5, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/04/2022%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の03月を振り返る
-        <small><time>Apr 6, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/03/2022%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の02月を振り返る
-        <small><time>Mar 3, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2022/01/2022%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2022年の01月を振り返る
-        <small><time>Jan 31, 2022</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/12/2021%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の12月を振り返る
-        <small><time>Dec 31, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/12/2021%E5%B9%B4%E3%81%AE11%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の11月を振り返る
-        <small><time>Dec 17, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/11/%E8%81%B7%E5%9F%9F%E6%91%82%E5%8F%962%E5%9B%9E%E7%9B%AE%E3%81%AE%E6%84%9F%E6%83%B3/">
-        職域摂取（2回目）の感想
-        <small><time>Nov 3, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/11/2021%E5%B9%B4%E3%81%AE10%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の10月を振り返る
-        <small><time>Nov 3, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/09/2021%E5%B9%B4%E3%81%AE09%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の09月を振り返る
-        <small><time>Sep 29, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/09/2021%E5%B9%B4%E3%81%AE08%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の08月を振り返る
-        <small><time>Sep 1, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/08/2021%E5%B9%B4%E3%81%AE07%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の07月を振り返る
-        <small><time>Aug 4, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/07/%E8%81%B7%E5%9F%9F%E6%91%82%E5%8F%961%E5%9B%9E%E7%9B%AE%E3%81%AE%E6%84%9F%E6%83%B3/">
-        職域摂取（1回目）の感想
-        <small><time>Jul 11, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/06/2021%E5%B9%B4%E3%81%AE06%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の06月を振り返る
-        <small><time>Jun 30, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/05/2021%E5%B9%B4%E3%81%AE05%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の05月を振り返る
-        <small><time>May 30, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/05/2021%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の04月を振り返る
-        <small><time>May 1, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/04/2021%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の03月を振り返る
-        <small><time>Apr 11, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/03/%E8%87%AA%E4%BD%9C%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/">
-        自作のテーマに乗り換えた
-        <small><time>Mar 28, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/03/2021%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の02月を振り返る
-        <small><time>Mar 2, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2021/01/2021%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
-        2021年の01月を振り返る
-        <small><time>Jan 31, 2021</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2020/12/2020%E5%B9%B4%E3%81%AE%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A%E3%81%A8%E8%B2%B7%E3%81%A3%E3%81%A6%E8%89%AF%E3%81%8B%E3%81%A3%E3%81%9F%E7%89%A9/">
-        2020年の振り返りと買って良かった物
-        <small><time>Dec 31, 2020</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2020/11/iphone-se2%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/">
-        iPhone SE2に乗り換えた
-        <small><time>Nov 29, 2020</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/">
-        client_golangを使ってPrometheusのtext formatに即したファイルを生成する
-        <small><time>Oct 31, 2020</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2020/09/usb%E5%88%87%E6%9B%BF%E5%99%A8%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/">
-        USB切替器を購入した
-        <small><time>Sep 23, 2020</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2020/09/rme-adi-2-dac-fs%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%97%E3%81%9F/">
-        RME ADI-2 DAC FSを購入した
-        <small><time>Sep 17, 2020</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2020/09/atok-passport%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/">
-        ATOK Passportに乗り換えた
-        <small><time>Sep 2, 2020</time></small>
-    </a>
-</li>
-    <li>
-    <a href="https://www.y103.org/post/2020/08/uq-mobile%E3%81%AB%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%E3%81%9F/">
-        UQ mobileに乗り換えた
-        <small><time>Aug 24, 2020</time></small>
-    </a>
-</li>
-</ul>
-        </main><footer id="footer">
-    www.y103.org is licensed under CC-BY-4.0.
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<div class="-mt-2 mb-16 flex items-center">
+  
+  <div
+    class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]"
+  >
+    <img
+      class="my-0 aspect-square w-16 rounded-full !bg-black/5 hover:animate-spin dark:!bg-black/80"
+      src="https://www.y103.org/android-chrome-512x512.png"
+      alt="yjuba"
+    />
+  </div>
+  
+  
+  <div>
+    <h1 class="mb-2 mt-3 text-[1.6rem] font-bold">yjuba</h1>
+    <div class="break-words">
+      内製クラウドの雲の中を飛んでいる鳥類。嵐に巻き込まれたので情シスの木で雨宿り中。
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2024年の03月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2024/04/06</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2024/04/2024%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2024年の03月を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2024年の02月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2024/03/03</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2024/03/2024%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2024年の02月を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2024年の01月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2024/02/18</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2024/02/2024%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2024年の01月を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2023年の12月と2023年全体を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2024/01/04</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2023年の12月と2023年全体を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2023年の11月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2023/12/24</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2023/12/2023%E5%B9%B4%E3%81%AE11%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2023年の11月を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2023年の10月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2023/11/05</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2023/11/2023%E5%B9%B4%E3%81%AE10%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2023年の10月を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2023年の09月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2023/10/15</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2023/10/2023%E5%B9%B4%E3%81%AE09%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2023年の09月を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2023年の08月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2023/09/12</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2023/09/2023%E5%B9%B4%E3%81%AE08%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2023年の08月を振り返る</a>
+</section>
+
+
+
+
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  
+  <h2 class="!my-0 pb-1 font-bold !leading-none">2023年の07月を振り返る</h2>
+  <time class="text-sm antialiased opacity-60"
+    >2023/08/08</time
+  >
+  <a class="absolute inset-0 text-[0]" href="https://www.y103.org/post/2023/08/2023%E5%B9%B4%E3%81%AE07%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">2023年の07月を振り返る</a>
+</section>
+
+
+
+
+<nav class="mt-16 flex">
+  
+  
+  <a class="btn ml-auto" href="/page/2/"
+    >次のページ →</a
+  >
+  
+</nav>
+
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://www.y103.org/">www.y103.org</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
 </footer>
-</body>
+
+  </body>
 </html>

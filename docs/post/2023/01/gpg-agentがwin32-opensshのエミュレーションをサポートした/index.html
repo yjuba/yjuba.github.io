@@ -260,17 +260,31 @@ https://qiita.com/slotport/items/e1d5a5dbd3aa7c6a2a24 " />
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
     >
       
+
 <article>
-    <header id="post-header">
-        <h1>gpg-agentがWin32-OpenSSHのエミュレーションをサポートした</h1>
-        <div>
-            <time>January 9, 2023</time>
-            </div>
-    </header><h2 id="前提">前提</h2>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">gpg-agentがWin32-OpenSSHのエミュレーションをサポートした</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>2023/01/09</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>yjuba</span>
+      
+    </div>
+    
+  </header>
+
+  <section><h2 id="前提">前提<a hidden class="anchor" aria-hidden="true" href="#前提">#</a></h2>
 <p>日常的にYubiKeyに入れたPGP鍵（認証鍵）を使ってsshしているのですが、GnuPGの変更によって構成が変化したため以下にまとめます。鍵はsshにおける公開鍵認証とgitのコミットへの署名に利用しています。なお、ホストのOSにはWindows10を使用しており、実際の開発や作業はWSL2もしくは仮想マシン上のLinuxで行っています。</p>
 <p>当初はgpg-agentをgpg-agentとして利用していました。その際には<a href="https://github.com/rupor-github/win-gpg-agent" target="_blank">win-gpg-agent</a>
 を使用して各種の問題を回避していました。ところが、2022年の9月にサポートが終了したため乗り換え先を探していました。</p>
-<h2 id="本文">本文</h2>
+<h2 id="本文">本文<a hidden class="anchor" aria-hidden="true" href="#本文">#</a></h2>
 <p>GnuPGのバージョン2.4.0において、gpg-agentが<a href="https://github.com/PowerShell/Win32-OpenSSH" target="_blank">Win32-OpenSSH</a>
 のエミュレーションをサポートしました。コミットは以下のURLになります。</p>
 <p><a href="https://dev.gnupg.org/rGc51139f2bc546c6bd4548e24a604f2178a2b8366" target="_blank">https://dev.gnupg.org/rGc51139f2bc546c6bd4548e24a604f2178a2b8366</a>
@@ -282,11 +296,45 @@ https://qiita.com/slotport/items/e1d5a5dbd3aa7c6a2a24 " />
 <p>また、WSL2上でも同様に鍵を扱いたかったため、npiperelayとsocatを利用して名前付きパイプへの疎通を確保しています。本当はこのワークアラウンドも避けたいのですが、現状回避方法を発見できなかったためこのようにしています。</p>
 <p>ちなみに、元々は<a href="https://keens.github.io/blog/2021/03/23/yubikeywotsukau_openpghen/" target="_blank">知人の投稿</a>
 に惹かれてYubiKeyにPGP鍵を入れて運用を始めたのですが、結果としてPGP鍵はSSH鍵として利用されることとなってしまいました。本当ははssh-agentとしてではなく、gpg-agentをgpg-agentとして運用したいのですが、一旦は運用のやりやすさを優先して現状の構成としています。</p>
-<h2 id="補足">補足</h2>
+<h2 id="補足">補足<a hidden class="anchor" aria-hidden="true" href="#補足">#</a></h2>
 <p>なぜ、こんなに面倒なことになっているのかと思われるかも知れませんが、Windowsにおけるssh-agent事情は混沌を極めているという前提があります。詳細は以下のURLにまとめられています。</p>
 <p><a href="https://qiita.com/slotport/items/e1d5a5dbd3aa7c6a2a24" target="_blank">https://qiita.com/slotport/items/e1d5a5dbd3aa7c6a2a24</a>
 </p>
+
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://www.y103.org/post/2023/02/2023%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span class="mr-1.5">←</span><span>2023年の01月を振り返る</span></a>
+    
+    
+    <a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://www.y103.org/post/2022/12/2022%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span>2022年の12月を振り返る</span><span class="ml-1.5">→</span></a>
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
 </article>
+
 
     </main>
 

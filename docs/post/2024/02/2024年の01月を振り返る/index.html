@@ -263,26 +263,40 @@ sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from runn
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
     >
       
+
 <article>
-    <header id="post-header">
-        <h1>2024年の01月を振り返る</h1>
-        <div>
-            <time>February 18, 2024</time>
-            </div>
-    </header><p>油断をしていたら1月の振り返りを終える前に2月が終わりそうになっていました。1月は前半は長めの年末年始休暇でしたが地震もあり世間はバタバタしていたように感じました。</p>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">2024年の01月を振り返る</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>2024/02/18</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>yjuba</span>
+      
+    </div>
+    
+  </header>
+
+  <section><p>油断をしていたら1月の振り返りを終える前に2月が終わりそうになっていました。1月は前半は長めの年末年始休暇でしたが地震もあり世間はバタバタしていたように感じました。</p>
 <p>仕事に関しては主務が何か分からない程度には色々なことを進めていますが、トラブルシューティングを通じてLXDやsystemdに少し詳しくなった気がします。</p>
-<h2 id="1月にやりたかったこと">1月にやりたかったこと</h2>
-<h3 id="確定申告の準備">確定申告の準備</h3>
+<h2 id="1月にやりたかったこと">1月にやりたかったこと<a hidden class="anchor" aria-hidden="true" href="#1月にやりたかったこと">#</a></h2>
+<h3 id="確定申告の準備">確定申告の準備<a hidden class="anchor" aria-hidden="true" href="#確定申告の準備">#</a></h3>
 <p>確定申告そのものを終わらせました、幸い今年も多少は還付されるようです。もう少しすると固定資産税の支払いが来るので還付されたと思ったらすぐに別の税金として納付するだけなのですが。</p>
-<h3 id="新nisaへの資産の移管">新NISAへの資産の移管</h3>
+<h3 id="新nisaへの資産の移管">新NISAへの資産の移管<a hidden class="anchor" aria-hidden="true" href="#新nisaへの資産の移管">#</a></h3>
 <p>こちらも無事完了しました。丁度良いタイミングだったので、保有している有価証券の売却と現金比率の調整も実施しました。今まではほぼ全ての資産を有価証券にしていた関係で手元の現金が心許なかったのですが、多少の出費には耐えられる程度の現金を手元に残すことにしました。新NISAについては成長投資枠は年始に一括で、積み立て投資枠については24分割して月に二回ずつ買い付けています。クレカ決済の限度額が十万円になれば一回にまとめてしまうつもりです。早く改正してほしい。</p>
-<h2 id="2月にやりたいこと">2月にやりたいこと</h2>
-<h3 id="読書量を増やす">読書量を増やす</h3>
+<h2 id="2月にやりたいこと">2月にやりたいこと<a hidden class="anchor" aria-hidden="true" href="#2月にやりたいこと">#</a></h2>
+<h3 id="読書量を増やす">読書量を増やす<a hidden class="anchor" aria-hidden="true" href="#読書量を増やす">#</a></h3>
 <p>これと言って思いつかなかったのですが、1月は多少は読みましたが思ったほどではないので2月は少しは増やしたい所です。</p>
-<h2 id="仕事">仕事</h2>
+<h2 id="仕事">仕事<a hidden class="anchor" aria-hidden="true" href="#仕事">#</a></h2>
 <p>冒頭でも少し触れましたが、主務が分からない程度に色々なことを進めています。今はマネージャと言われるような立場ですが、根がインフラエンジニアという職業柄トラブルシューティングや問題解決から学ぶことが多いなと今更ながら思います。</p>
 <p>今月は二件ほど記憶に残っている物があるので紹介します。</p>
-<h3 id="1-特定条件下でlxdのコンテナがipアドレスを正常に取得できない">1. 特定条件下でLXDのコンテナがIPアドレスを正常に取得できない</h3>
+<h3 id="1-特定条件下でlxdのコンテナがipアドレスを正常に取得できない">1. 特定条件下でLXDのコンテナがIPアドレスを正常に取得できない<a hidden class="anchor" aria-hidden="true" href="#1-特定条件下でlxdのコンテナがipアドレスを正常に取得できない">#</a></h3>
 <p>下記の組み合わせでLXDコンテナを起動した際に、ゲストがIPアドレスを取得できないという問題に遭遇しました。</p>
 <ul>
 <li>ホスト: Ubuntu Jammy  (22.04)</li>
@@ -292,7 +306,7 @@ sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from runn
 <p><a href="https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306" target="_blank">https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306</a>
 </p>
 <p>当初はXenialのゲストで遭遇した問題でしたが、切り分けのため他のバージョンのUbuntuや他のディストリビューションを試したことで切り分けが進み上記の記事に行き着くことができました。</p>
-<h3 id="2-systemd管理下のデーモンから起動したコマンドが特権を行使できない">2. systemd管理下のデーモンから起動したコマンドが特権を行使できない</h3>
+<h3 id="2-systemd管理下のデーモンから起動したコマンドが特権を行使できない">2. systemd管理下のデーモンから起動したコマンドが特権を行使できない<a hidden class="anchor" aria-hidden="true" href="#2-systemd管理下のデーモンから起動したコマンドが特権を行使できない">#</a></h3>
 <p>こちらについては担当外の所からお鉢が回ってきた問題となりますが、面白かったので紹介します。</p>
 <p>systemd管理下のデーモンから <code>sudo foo</code> の様に特権を必要とするコマンドを実行したところ、以下の様なエラーが表示されコマンドの実行に失敗するという問題でした。</p>
 <pre tabindex="0"><code>sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from running as root.
@@ -301,14 +315,14 @@ sudo: If sudo is running in a container, you may need to adjust the container co
 <p><a href="https://www.freedesktop.org/software/systemd/man/247/systemd.exec.html#Security" target="_blank">https://www.freedesktop.org/software/systemd/man/247/systemd.exec.html#Security</a>
 </p>
 <p>年を追うごとに、systemd管理下のプロセスにはコンテナの如く様々な制約を課すことができるようになっています。計算資源の割り当てを制限できるのは知っていたのですが、今回の <code>NoNewPrivileges</code> をはじめここまで細かい制約を課すことができるようになっていたのは今回の調査を通じて初めて知りました。</p>
-<h2 id="ff14">FF14</h2>
+<h2 id="ff14">FF14<a hidden class="anchor" aria-hidden="true" href="#ff14">#</a></h2>
 <p>マンダヴィルウェポンの関係で旧固定のメンバーとエキルレを延々と回しています。仕事の状況は落ち着いていませんが、絶オメガをやるつもりならそろそろ心づもりをするべきだろうと思っています。</p>
-<h2 id="買った物">買った物</h2>
+<h2 id="買った物">買った物<a hidden class="anchor" aria-hidden="true" href="#買った物">#</a></h2>
 <ul>
 <li>携帯コインホルダー</li>
 </ul>
 <p>何かの配信で見かけて、月に一回程度現金を持ち歩く必要があるので購入しました。普段は紙幣とカードをマネークリップに入れて持ち歩いているのですが、硬貨の取り扱いに困っていたのでとても助かってます。</p>
-<h2 id="買った本">買った本</h2>
+<h2 id="買った本">買った本<a hidden class="anchor" aria-hidden="true" href="#買った本">#</a></h2>
 <ul>
 <li>魔法少女リリカルなのはViVid(18)</li>
 <li>魔法少女リリカルなのはViVid(19)</li>
@@ -340,7 +354,41 @@ sudo: If sudo is running in a container, you may need to adjust the container co
 <li>敗者のゲーム［原著第８版］</li>
 </ul>
 <p>種別を問わず読書量を増やそうということで色々買っています。厳密には一月中には読んでいないのですが、葬送のフリーレンはとても楽しめました。あと、新旧NISAに資産の殆どを突っ込んでいる割には読んだことが無かったので敗者のゲームも読んでいます。色んな動画やブログで述べられている様な事がしつこいくらい繰り返し書かれている良い書籍だと思います。</p>
+
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://www.y103.org/post/2024/03/2024%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span class="mr-1.5">←</span><span>2024年の02月を振り返る</span></a>
+    
+    
+    <a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span>2023年の12月と2023年全体を振り返る</span><span class="ml-1.5">→</span></a>
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
 </article>
+
 
     </main>
 

@@ -258,24 +258,38 @@ qcow2イメージはスパースファイルなので、未使用領域はメタ
       class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
     >
       
+
 <article>
-    <header id="post-header">
-        <h1>2023年の03月を振り返る</h1>
-        <div>
-            <time>April 1, 2023</time>
-            </div>
-    </header><p>2月末に罹患したコロナの影響で前半は体調がボロボロでした。後半は大分持ち直しましたが、あまり調子が良いとは言えない1ヶ月でした。3月に一番驚いたのは岸田首相のウクライナ訪問だった気がします。</p>
-<h2 id="新型コロナウィルス">新型コロナウィルス</h2>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">2023年の03月を振り返る</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>2023/04/01</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>yjuba</span>
+      
+    </div>
+    
+  </header>
+
+  <section><p>2月末に罹患したコロナの影響で前半は体調がボロボロでした。後半は大分持ち直しましたが、あまり調子が良いとは言えない1ヶ月でした。3月に一番驚いたのは岸田首相のウクライナ訪問だった気がします。</p>
+<h2 id="新型コロナウィルス">新型コロナウィルス<a hidden class="anchor" aria-hidden="true" href="#新型コロナウィルス">#</a></h2>
 <p>直ってからも地味に調子が悪いのが続いていました。3月の後半には大分マシになっています。いい加減体調を安定させて行きたいところです。</p>
-<h2 id="ff14">FF14</h2>
+<h2 id="ff14">FF14<a hidden class="anchor" aria-hidden="true" href="#ff14">#</a></h2>
 <p>6.4零式をどうするか引き続き検討中です。何も考えずに土日に仕事を入れたら、2～3週目辺りの土日になりそうなので土日昼をあまりやらない固定を探さざるを得ない気がしています。潜水艦は完全に立ち上がったので、月に大体1500万ギル位稼いでくれています。</p>
-<h2 id="仮想マシンのイメージ作成">仮想マシンのイメージ作成</h2>
+<h2 id="仮想マシンのイメージ作成">仮想マシンのイメージ作成<a hidden class="anchor" aria-hidden="true" href="#仮想マシンのイメージ作成">#</a></h2>
 <p>作成したqcow2イメージが大きくなってしまうという話があり対応していました。一通りのセットアップが終わった後にファイルシステムの空き領域をゼロ埋めしてからイメージに変換するとできあがったqcow2ファイルが小さくなります。</p>
 <p>qcow2イメージはスパースファイルなので、未使用領域はメタデータで管理しディスク使用量を削減することができます。一方、ゲスト上で利用しているファイルシステム上に書き込みを行った場合、その後にファイルを削除したとしてもブロックデバイス上にはデータが残っており未使用領域として扱われない場合があります。そのため、空き領域をゼロ埋めし未使用領域として扱われるようにしています。</p>
 <p>また、他の方法も調べていたのですが <code>qemu-img convert</code> を行う際に <code>-c</code> オプションを渡すとqcow2イメージを圧縮してくれることを知りました。試してみたところ、圧縮後のqcow2イメージがゲスト上のファイルシステムの使用量より小さくなりました。これは新しい発見だったので、今後必要に応じて活用したいと思っています。</p>
-<h2 id="買った物">買った物</h2>
+<h2 id="買った物">買った物<a hidden class="anchor" aria-hidden="true" href="#買った物">#</a></h2>
 <p>先月に引き続き大した買い物をしていませんでした。最近はコーヒー濃度計が欲しいと思っています。数千円かと思っていたのですが、3万円すると聞いてやや及び腰です。</p>
-<h2 id="読んだ本">読んだ本</h2>
+<h2 id="読んだ本">読んだ本<a hidden class="anchor" aria-hidden="true" href="#読んだ本">#</a></h2>
 <ul>
 <li>桜の世界(上)</li>
 <li>桜の世界(下)</li>
@@ -292,7 +306,41 @@ qcow2イメージはスパースファイルなので、未使用領域はメタ
 <li>コーヒー　おいしさの方程式</li>
 </ul>
 <p>どんどん本を買うのですがどんどん積読が増えています。</p>
+
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://www.y103.org/post/2023/06/2023%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span class="mr-1.5">←</span><span>2023年の04月を振り返る</span></a>
+    
+    
+    <a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://www.y103.org/post/2023/03/2023%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span>2023年の02月を振り返る</span><span class="ml-1.5">→</span></a>
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
 </article>
+
 
     </main>
 

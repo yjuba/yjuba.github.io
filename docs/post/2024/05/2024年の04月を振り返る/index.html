@@ -1,0 +1,380 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="ja"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>2024年の04月を振り返る - www.y103.org</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="4月からゴールデンウィークに掛けては、インフラエンジニアらしくハイパーバイザ上で発生した様々なトラブルに直面することになりました。3月に引き続きハイパーバイザ周りのトラブル対応が続いていますが、ようやく一区切り付いたので忘れる前にブログを書いています。
+先月も同じ事を書いていますが、5月はもう一つのプロジェクトに専念したいと思います。
+4月にやりたかったこと 健康を維持する 3月後半からのバタバタが長引いた結果、4月に入っても健康管理が疎かになっています。来週に血液検査があるので肝臓の数値が非常に心配なので、慌てて健康管理に取り組んでいます。
+5月にやりたいこと 健康を維持する 4月があまりにもボロボロだったので引き続きここを頑張りたいと思います。
+GPUを新調する (?) ぼちぼち黄金のレガシーが実装されるため、GPUを新調するか悩んでいます。DLSSがサポートされたため、今使っているRTX 2070Sでもプレイに支障は無さそうですが、丁度良いタイミングなので入れ替えるか悩んでいます。今の2070Sもかなり長時間使用しているので故障する前に交換したい気持ちが強いですが、価格が高いのとRTX 5000シリーズの足音が聞こえて来ているので迷っています。
+仕事 冒頭でも触れましたが、先月に引き続きハイパーバイザ上のトラブル対応に追われていました。先月とは異なり、トラブルの原因自体は早々に特定されていたため、その修正をなるべく早く商用環境に反映するための作業を進めていました。タイトなスケジュールなので滑り込みではありましたが、当初予定されていたスケジュール通りには反映ができたようなので安心しています。
+FF14 黄金のレガシーに併せて久々に固定を組むことになりました。プレイ自体は相変わらず潜水艦くらいしか触っていません。どちらかというとメンバーを探すためにロドストを巡回している時間の方が長い状態です。形式の定まっていない文章の山から固定の条件に合うメンバーを探すのに苦労しているので、ChatGPTあたりで文章の整形ができないか検討しています。
+買った物 アイリスオーヤマ PCF-SDS15T-W AeroPress 昔に買った分解できないサーキュレーターが埃で限界を迎えたので買い換えました。安いのは良かったのですが、せめて分解はできるサーキュレーターを買うべきだったと反省しました。AeroPressは前々から興味はありましたが触ったことが無かったので購入しました。ペーパードリップに負けず劣らずで手入れが楽なところが気に入っています。
+買った本 私を喰べたい、ひとでなし 1 私を喰べたい、ひとでなし 2 私を喰べたい、ひとでなし 3 私を喰べたい、ひとでなし 4 私を喰べたい、ひとでなし 5 私を喰べたい、ひとでなし 6 私を喰べたい、ひとでなし 7 私を喰べたい、ひとでなし 8 ささやくように恋を唄う9巻 株式会社 神かくし(6) 宝石商のメイド ５ はるかリセット　15 くちべた食堂　４ 葬送のフリーレン（１３） 廃バスに住む ５ 隣のクーデレラを甘やかしたら、ウチの合鍵を渡すことになった　（５） ご注文はうさぎですか？　１２巻 失敗から学ぶ RDBの正しい歩き方 SSL/TLS実践入門 Webの安全性を支える暗号化技術の設計思想 例によって数は買っているのですが仕事が忙しかったので積んだままの本が殆どです。" />
+  <meta name="author" content="yjuba" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/android-chrome-512x512.png" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" />
+  
+  <link rel="preload" as="image" href="https://www.y103.org/github.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://www.y103.org/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://www.y103.org/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://www.y103.org/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.124.1">
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="2024年の04月を振り返る">
+<meta itemprop="description" content="2024年の04月を振り返る"><meta itemprop="datePublished" content="2024-05-12T07:30:42+00:00" />
+<meta itemprop="dateModified" content="2024-05-12T07:30:42+00:00" />
+<meta itemprop="wordCount" content="60">
+<meta itemprop="keywords" content="" />
+  
+  <meta property="og:title" content="2024年の04月を振り返る" />
+<meta property="og:description" content="2024年の04月を振り返る" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.y103.org/post/2024/05/2024%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-05-12T07:30:42+00:00" />
+<meta property="article:modified_time" content="2024-05-12T07:30:42+00:00" />
+
+  
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="2024年の04月を振り返る"/>
+<meta name="twitter:description" content="2024年の04月を振り返る"/>
+
+  
+  
+  
+  <link rel="canonical" href="https://www.y103.org/post/2024/05/2024%E5%B9%B4%E3%81%AE04%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://www.y103.org/"
+      >www.y103.org</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/yutaka_j08"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/yjuba"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">2024年の04月を振り返る</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>2024/05/12</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>yjuba</span>
+      
+    </div>
+    
+  </header>
+
+  <section><p>4月からゴールデンウィークに掛けては、インフラエンジニアらしくハイパーバイザ上で発生した様々なトラブルに直面することになりました。3月に引き続きハイパーバイザ周りのトラブル対応が続いていますが、ようやく一区切り付いたので忘れる前にブログを書いています。</p>
+<p>先月も同じ事を書いていますが、5月はもう一つのプロジェクトに専念したいと思います。</p>
+<h2 id="4月にやりたかったこと">4月にやりたかったこと<a hidden class="anchor" aria-hidden="true" href="#4月にやりたかったこと">#</a></h2>
+<h3 id="健康を維持する">健康を維持する<a hidden class="anchor" aria-hidden="true" href="#健康を維持する">#</a></h3>
+<p>3月後半からのバタバタが長引いた結果、4月に入っても健康管理が疎かになっています。来週に血液検査があるので肝臓の数値が非常に心配なので、慌てて健康管理に取り組んでいます。</p>
+<h2 id="5月にやりたいこと">5月にやりたいこと<a hidden class="anchor" aria-hidden="true" href="#5月にやりたいこと">#</a></h2>
+<h3 id="健康を維持する-1">健康を維持する<a hidden class="anchor" aria-hidden="true" href="#健康を維持する-1">#</a></h3>
+<p>4月があまりにもボロボロだったので引き続きここを頑張りたいと思います。</p>
+<h3 id="gpuを新調する-">GPUを新調する (?)<a hidden class="anchor" aria-hidden="true" href="#gpuを新調する-">#</a></h3>
+<p>ぼちぼち黄金のレガシーが実装されるため、GPUを新調するか悩んでいます。DLSSがサポートされたため、今使っているRTX 2070Sでもプレイに支障は無さそうですが、丁度良いタイミングなので入れ替えるか悩んでいます。今の2070Sもかなり長時間使用しているので故障する前に交換したい気持ちが強いですが、価格が高いのとRTX 5000シリーズの足音が聞こえて来ているので迷っています。</p>
+<h2 id="仕事">仕事<a hidden class="anchor" aria-hidden="true" href="#仕事">#</a></h2>
+<p>冒頭でも触れましたが、先月に引き続きハイパーバイザ上のトラブル対応に追われていました。先月とは異なり、トラブルの原因自体は早々に特定されていたため、その修正をなるべく早く商用環境に反映するための作業を進めていました。タイトなスケジュールなので滑り込みではありましたが、当初予定されていたスケジュール通りには反映ができたようなので安心しています。</p>
+<h2 id="ff14">FF14<a hidden class="anchor" aria-hidden="true" href="#ff14">#</a></h2>
+<p>黄金のレガシーに併せて久々に固定を組むことになりました。プレイ自体は相変わらず潜水艦くらいしか触っていません。どちらかというとメンバーを探すためにロドストを巡回している時間の方が長い状態です。形式の定まっていない文章の山から固定の条件に合うメンバーを探すのに苦労しているので、ChatGPTあたりで文章の整形ができないか検討しています。</p>
+<h2 id="買った物">買った物<a hidden class="anchor" aria-hidden="true" href="#買った物">#</a></h2>
+<ul>
+<li>アイリスオーヤマ PCF-SDS15T-W</li>
+<li>AeroPress</li>
+</ul>
+<p>昔に買った分解できないサーキュレーターが埃で限界を迎えたので買い換えました。安いのは良かったのですが、せめて分解はできるサーキュレーターを買うべきだったと反省しました。AeroPressは前々から興味はありましたが触ったことが無かったので購入しました。ペーパードリップに負けず劣らずで手入れが楽なところが気に入っています。</p>
+<h2 id="買った本">買った本<a hidden class="anchor" aria-hidden="true" href="#買った本">#</a></h2>
+<ul>
+<li>私を喰べたい、ひとでなし 1</li>
+<li>私を喰べたい、ひとでなし 2</li>
+<li>私を喰べたい、ひとでなし 3</li>
+<li>私を喰べたい、ひとでなし 4</li>
+<li>私を喰べたい、ひとでなし 5</li>
+<li>私を喰べたい、ひとでなし 6</li>
+<li>私を喰べたい、ひとでなし 7</li>
+<li>私を喰べたい、ひとでなし 8</li>
+<li>ささやくように恋を唄う9巻</li>
+<li>株式会社 神かくし(6)</li>
+<li>宝石商のメイド ５</li>
+<li>はるかリセット　15</li>
+<li>くちべた食堂　４</li>
+<li>葬送のフリーレン（１３）</li>
+<li>廃バスに住む ５</li>
+<li>隣のクーデレラを甘やかしたら、ウチの合鍵を渡すことになった　（５）</li>
+<li>ご注文はうさぎですか？　１２巻</li>
+<li>失敗から学ぶ RDBの正しい歩き方</li>
+<li>SSL/TLS実践入門 Webの安全性を支える暗号化技術の設計思想</li>
+</ul>
+<p>例によって数は買っているのですが仕事が忙しかったので積んだままの本が殆どです。</p>
+
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://www.y103.org/post/2024/04/2024%E5%B9%B4%E3%81%AE03%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span>2024年の03月を振り返る</span><span class="ml-1.5">→</span></a>
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://www.y103.org/">www.y103.org</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

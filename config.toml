@@ -1,7 +1,7 @@
 baseURL = "https://www.y103.org/"
 author = "yjuba"
 copyright = "www.y103.org is licensed under CC-BY-4.0."
-paginate = 9
+pagination.pagerSize = 9
 languageCode = "ja"
 defaultContentLanguage = "ja"
 enableInlineShortcodes = true
@@ -17,6 +17,7 @@ color = "linen"
 
 twitter = "yutaka_j08"
 github = "yjuba"
+bluesky = "y103.org"
 
 avatar = "https://www.y103.org/android-chrome-512x512.png"
 name = "yjuba"
@@ -32,5 +33,5 @@ unsafe = true
 
 [services]
 
-[services.twitter]
+[services.x]
 disableInlineCSS = true

@@ -6,42 +6,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <html
   class="not-ready lg:text-base"
-  style="--bg: #faf8f1"
+  style="--bg:#faf8f1"
   lang="ja"
->
-  <head>
+  dir="ltr"
+><head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -55,129 +25,105 @@
   
   <meta name="theme-color" />
 
-  
-  
-  
-  
   <meta name="description" content="油断をしていたら1月の振り返りを終える前に2月が終わりそうになっていました。1月は前半は長めの年末年始休暇でしたが地震もあり世間はバタバタしていたように感じました。
 仕事に関しては主務が何か分からない程度には色々なことを進めていますが、トラブルシューティングを通じてLXDやsystemdに少し詳しくなった気がします。
-1月にやりたかったこと 確定申告の準備 確定申告そのものを終わらせました、幸い今年も多少は還付されるようです。もう少しすると固定資産税の支払いが来るので還付されたと思ったらすぐに別の税金として納付するだけなのですが。
-新NISAへの資産の移管 こちらも無事完了しました。丁度良いタイミングだったので、保有している有価証券の売却と現金比率の調整も実施しました。今まではほぼ全ての資産を有価証券にしていた関係で手元の現金が心許なかったのですが、多少の出費には耐えられる程度の現金を手元に残すことにしました。新NISAについては成長投資枠は年始に一括で、積み立て投資枠については24分割して月に二回ずつ買い付けています。クレカ決済の限度額が十万円になれば一回にまとめてしまうつもりです。早く改正してほしい。
-2月にやりたいこと 読書量を増やす これと言って思いつかなかったのですが、1月は多少は読みましたが思ったほどではないので2月は少しは増やしたい所です。
-仕事 冒頭でも少し触れましたが、主務が分からない程度に色々なことを進めています。今はマネージャと言われるような立場ですが、根がインフラエンジニアという職業柄トラブルシューティングや問題解決から学ぶことが多いなと今更ながら思います。
+1月にやりたかったこと
+確定申告の準備
+確定申告そのものを終わらせました、幸い今年も多少は還付されるようです。もう少しすると固定資産税の支払いが来るので還付されたと思ったらすぐに別の税金として納付するだけなのですが。
+新NISAへの資産の移管
+こちらも無事完了しました。丁度良いタイミングだったので、保有している有価証券の売却と現金比率の調整も実施しました。今まではほぼ全ての資産を有価証券にしていた関係で手元の現金が心許なかったのですが、多少の出費には耐えられる程度の現金を手元に残すことにしました。新NISAについては成長投資枠は年始に一括で、積み立て投資枠については24分割して月に二回ずつ買い付けています。クレカ決済の限度額が十万円になれば一回にまとめてしまうつもりです。早く改正してほしい。
+2月にやりたいこと
+読書量を増やす
+これと言って思いつかなかったのですが、1月は多少は読みましたが思ったほどではないので2月は少しは増やしたい所です。
+仕事
+冒頭でも少し触れましたが、主務が分からない程度に色々なことを進めています。今はマネージャと言われるような立場ですが、根がインフラエンジニアという職業柄トラブルシューティングや問題解決から学ぶことが多いなと今更ながら思います。
 今月は二件ほど記憶に残っている物があるので紹介します。
-1. 特定条件下でLXDのコンテナがIPアドレスを正常に取得できない 下記の組み合わせでLXDコンテナを起動した際に、ゲストがIPアドレスを取得できないという問題に遭遇しました。
-ホスト: Ubuntu Jammy (22.04) ゲスト: Ubuntu Xenial (16.04)、CentOS 7 最終的には以下の記事にたどり着き、ホスト側のsystemdが使用しているcgroupのバージョンを2から1にすることで問題が解消しました。詳細までは追っていませんが、ゲストのsystemdが期待しているcgroupのバージョンとホストが使用しているsystemdが使用しているcgroupのバージョンが一致しないことが原因のようです。
-https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306 当初はXenialのゲストで遭遇した問題でしたが、切り分けのため他のバージョンのUbuntuや他のディストリビューションを試したことで切り分けが進み上記の記事に行き着くことができました。
-2. systemd管理下のデーモンから起動したコマンドが特権を行使できない こちらについては担当外の所からお鉢が回ってきた問題となりますが、面白かったので紹介します。
+1. 特定条件下でLXDのコンテナがIPアドレスを正常に取得できない
+下記の組み合わせでLXDコンテナを起動した際に、ゲストがIPアドレスを取得できないという問題に遭遇しました。
+
+ホスト: Ubuntu Jammy  (22.04)
+ゲスト: Ubuntu Xenial (16.04)、CentOS 7
+
+最終的には以下の記事にたどり着き、ホスト側のsystemdが使用しているcgroupのバージョンを2から1にすることで問題が解消しました。詳細までは追っていませんが、ゲストのsystemdが期待しているcgroupのバージョンとホストが使用しているsystemdが使用しているcgroupのバージョンが一致しないことが原因のようです。
+https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306
+
+当初はXenialのゲストで遭遇した問題でしたが、切り分けのため他のバージョンのUbuntuや他のディストリビューションを試したことで切り分けが進み上記の記事に行き着くことができました。
+2. systemd管理下のデーモンから起動したコマンドが特権を行使できない
+こちらについては担当外の所からお鉢が回ってきた問題となりますが、面白かったので紹介します。
 systemd管理下のデーモンから sudo foo の様に特権を必要とするコマンドを実行したところ、以下の様なエラーが表示されコマンドの実行に失敗するという問題でした。
-sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from running as root. sudo: If sudo is running in a container, you may need to adjust the container configuration to disable the flag. 結論からいうと、 NoNewPrivileges を無効化する為に関連する他の設定を変更する必要があるという問題でした。Unitファイルの NoNewPrivileges を false したにも関わらず、起動後のプロセスは NoNewPrivs: 1 だったので首を傾げてしまいました。詳細については以下のドキュメントに記載がありますが、特権を取得できると他の制限を課している意味が無くなるため排他的な設定になっていると理解しています。シンプルではありますが極めて有用な設定項目ではあると感じました。" />
-  <meta name="author" content="yjuba" />
-  
+sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from running as root.
+sudo: If sudo is running in a container, you may need to adjust the container configuration to disable the flag.
+結論からいうと、 NoNewPrivileges を無効化する為に関連する他の設定を変更する必要があるという問題でした。Unitファイルの NoNewPrivileges を false したにも関わらず、起動後のプロセスは NoNewPrivs: 1 だったので首を傾げてしまいました。詳細については以下のドキュメントに記載がありますが、特権を取得できると他の制限を課している意味が無くなるため排他的な設定になっていると理解しています。シンプルではありますが極めて有用な設定項目ではあると感じました。" />
+  <meta name="author" content="yjuba" /><link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
 
-  
-  
-  
-  
-  
-  
-  <link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
-
-  
-  
-  
-  
   
   <link rel="preload" as="image" href="https://www.y103.org/theme.png" />
 
-  
-  
-  
-  
   <link rel="preload" as="image" href="https://www.y103.org/android-chrome-512x512.png" />
-  
-  
 
-  
-  
-  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" />
-  
-  <link rel="preload" as="image" href="https://www.y103.org/github.svg" />
-  
-  
+  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" /><link rel="preload" as="image" href="https://www.y103.org/github.svg" /><link rel="preload" as="image" href="https://www.y103.org/bluesky.svg" />
 
-  
-  
   <script
     defer
     src="https://www.y103.org/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
-  
 
   
-  
-  
+  <link
+    rel="icon"
+    href="https://www.y103.org/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://www.y103.org/apple-touch-icon.png"
+  />
 
-  
-  <link rel="icon" href="https://www.y103.org/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://www.y103.org/apple-touch-icon.png" />
-
-  
-  <meta name="generator" content="Hugo 0.124.1">
-
-  
-  
-  
-  
-  
+  <meta name="generator" content="Hugo 0.147.1">
   <meta itemprop="name" content="2024年の01月を振り返る">
-<meta itemprop="description" content="2024年の01月を振り返る"><meta itemprop="datePublished" content="2024-02-18T13:27:57+00:00" />
-<meta itemprop="dateModified" content="2024-02-18T13:27:57+00:00" />
-<meta itemprop="wordCount" content="129">
-<meta itemprop="keywords" content="" />
-  
-  <meta property="og:title" content="2024年の01月を振り返る" />
-<meta property="og:description" content="2024年の01月を振り返る" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.y103.org/post/2024/02/2024%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2024-02-18T13:27:57+00:00" />
-<meta property="article:modified_time" content="2024-02-18T13:27:57+00:00" />
+  <meta itemprop="description" content="2024年の01月を振り返る">
+  <meta itemprop="datePublished" content="2024-02-18T13:27:57+00:00">
+  <meta itemprop="dateModified" content="2024-02-18T13:27:57+00:00">
+  <meta itemprop="wordCount" content="129">
+  <meta itemprop="keywords" content="振り返り"><meta property="og:url" content="https://www.y103.org/post/2024/02/2024%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
+  <meta property="og:site_name" content="www.y103.org">
+  <meta property="og:title" content="2024年の01月を振り返る">
+  <meta property="og:description" content="2024年の01月を振り返る">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-02-18T13:27:57+00:00">
+    <meta property="article:modified_time" content="2024-02-18T13:27:57+00:00">
 
-  
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="2024年の01月を振り返る"/>
-<meta name="twitter:description" content="2024年の01月を振り返る"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2024年の01月を振り返る">
+  <meta name="twitter:description" content="2024年の01月を振り返る">
 
-  
-  
-  
   <link rel="canonical" href="https://www.y103.org/post/2024/02/2024%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" />
-  
-  
 </head>
-
-  <body class="text-black duration-200 ease-out dark:text-white">
-    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-  <div class="relative z-50 mr-auto flex items-center">
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
-      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      class="-translate-y-[1px] text-2xl font-medium"
       href="https://www.y103.org/"
       >www.y103.org</a
     >
     <div
-      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
       role="button"
       aria-label="Dark"
     ></div>
   </div>
 
   <div
-    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
     role="button"
     aria-label="Menu"
   ></div>
-
-  
 
   <script>
     
@@ -223,80 +169,55 @@ sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from runn
   </script>
 
   <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
-  >
-    
-    
-
-    
-    <nav
-      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
     >
-      
       <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./twitter.svg)"
         href="https://twitter.com/yutaka_j08"
         target="_blank"
         rel="me"
-      >
-        twitter
-      </a>
-      
+      >twitter</a>
       <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./github.svg)"
         href="https://github.com/yjuba"
         target="_blank"
         rel="me"
-      >
-        github
-      </a>
-      
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./bluesky.svg)"
+        href="https://bsky.app/profile/y103.org"
+        target="_blank"
+        rel="me"
+      >bluesky</a>
     </nav>
-    
   </div>
 </header>
-
-
-    <main
-      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
-    >
-      
-
-<article>
-  <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">2024年の01月を振り返る</h1>
-
-    
-    <div class="text-sm antialiased opacity-60">
-      
-      <time>2024/02/18</time>
-      
-      
-      
-      
-      <span class="mx-1">&middot;</span>
-      <span>yjuba</span>
-      
-    </div>
-    
-  </header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">2024年の01月を振り返る</h1><div class="text-xs antialiased opacity-60"><time>2024/02/18</time><span class="mx-1">&middot;</span>
+      <span>yjuba</span></div></header>
 
   <section><p>油断をしていたら1月の振り返りを終える前に2月が終わりそうになっていました。1月は前半は長めの年末年始休暇でしたが地震もあり世間はバタバタしていたように感じました。</p>
 <p>仕事に関しては主務が何か分からない程度には色々なことを進めていますが、トラブルシューティングを通じてLXDやsystemdに少し詳しくなった気がします。</p>
-<h2 id="1月にやりたかったこと">1月にやりたかったこと<a hidden class="anchor" aria-hidden="true" href="#1月にやりたかったこと">#</a></h2>
-<h3 id="確定申告の準備">確定申告の準備<a hidden class="anchor" aria-hidden="true" href="#確定申告の準備">#</a></h3>
+<h2 id="1月にやりたかったこと">1月にやりたかったこと</h2>
+<h3 id="確定申告の準備">確定申告の準備</h3>
 <p>確定申告そのものを終わらせました、幸い今年も多少は還付されるようです。もう少しすると固定資産税の支払いが来るので還付されたと思ったらすぐに別の税金として納付するだけなのですが。</p>
-<h3 id="新nisaへの資産の移管">新NISAへの資産の移管<a hidden class="anchor" aria-hidden="true" href="#新nisaへの資産の移管">#</a></h3>
+<h3 id="新nisaへの資産の移管">新NISAへの資産の移管</h3>
 <p>こちらも無事完了しました。丁度良いタイミングだったので、保有している有価証券の売却と現金比率の調整も実施しました。今まではほぼ全ての資産を有価証券にしていた関係で手元の現金が心許なかったのですが、多少の出費には耐えられる程度の現金を手元に残すことにしました。新NISAについては成長投資枠は年始に一括で、積み立て投資枠については24分割して月に二回ずつ買い付けています。クレカ決済の限度額が十万円になれば一回にまとめてしまうつもりです。早く改正してほしい。</p>
-<h2 id="2月にやりたいこと">2月にやりたいこと<a hidden class="anchor" aria-hidden="true" href="#2月にやりたいこと">#</a></h2>
-<h3 id="読書量を増やす">読書量を増やす<a hidden class="anchor" aria-hidden="true" href="#読書量を増やす">#</a></h3>
+<h2 id="2月にやりたいこと">2月にやりたいこと</h2>
+<h3 id="読書量を増やす">読書量を増やす</h3>
 <p>これと言って思いつかなかったのですが、1月は多少は読みましたが思ったほどではないので2月は少しは増やしたい所です。</p>
-<h2 id="仕事">仕事<a hidden class="anchor" aria-hidden="true" href="#仕事">#</a></h2>
+<h2 id="仕事">仕事</h2>
 <p>冒頭でも少し触れましたが、主務が分からない程度に色々なことを進めています。今はマネージャと言われるような立場ですが、根がインフラエンジニアという職業柄トラブルシューティングや問題解決から学ぶことが多いなと今更ながら思います。</p>
 <p>今月は二件ほど記憶に残っている物があるので紹介します。</p>
-<h3 id="1-特定条件下でlxdのコンテナがipアドレスを正常に取得できない">1. 特定条件下でLXDのコンテナがIPアドレスを正常に取得できない<a hidden class="anchor" aria-hidden="true" href="#1-特定条件下でlxdのコンテナがipアドレスを正常に取得できない">#</a></h3>
+<h3 id="1-特定条件下でlxdのコンテナがipアドレスを正常に取得できない">1. 特定条件下でLXDのコンテナがIPアドレスを正常に取得できない</h3>
 <p>下記の組み合わせでLXDコンテナを起動した際に、ゲストがIPアドレスを取得できないという問題に遭遇しました。</p>
 <ul>
 <li>ホスト: Ubuntu Jammy  (22.04)</li>
@@ -306,7 +227,7 @@ sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from runn
 <p><a href="https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306" target="_blank">https://discuss.linuxcontainers.org/t/cannot-launch-centos7-images-using-a-jammy-host/15306</a>
 </p>
 <p>当初はXenialのゲストで遭遇した問題でしたが、切り分けのため他のバージョンのUbuntuや他のディストリビューションを試したことで切り分けが進み上記の記事に行き着くことができました。</p>
-<h3 id="2-systemd管理下のデーモンから起動したコマンドが特権を行使できない">2. systemd管理下のデーモンから起動したコマンドが特権を行使できない<a hidden class="anchor" aria-hidden="true" href="#2-systemd管理下のデーモンから起動したコマンドが特権を行使できない">#</a></h3>
+<h3 id="2-systemd管理下のデーモンから起動したコマンドが特権を行使できない">2. systemd管理下のデーモンから起動したコマンドが特権を行使できない</h3>
 <p>こちらについては担当外の所からお鉢が回ってきた問題となりますが、面白かったので紹介します。</p>
 <p>systemd管理下のデーモンから <code>sudo foo</code> の様に特権を必要とするコマンドを実行したところ、以下の様なエラーが表示されコマンドの実行に失敗するという問題でした。</p>
 <pre tabindex="0"><code>sudo: The &#34;no new privileges&#34; flag is set, which prevents sudo from running as root.
@@ -315,14 +236,14 @@ sudo: If sudo is running in a container, you may need to adjust the container co
 <p><a href="https://www.freedesktop.org/software/systemd/man/247/systemd.exec.html#Security" target="_blank">https://www.freedesktop.org/software/systemd/man/247/systemd.exec.html#Security</a>
 </p>
 <p>年を追うごとに、systemd管理下のプロセスにはコンテナの如く様々な制約を課すことができるようになっています。計算資源の割り当てを制限できるのは知っていたのですが、今回の <code>NoNewPrivileges</code> をはじめここまで細かい制約を課すことができるようになっていたのは今回の調査を通じて初めて知りました。</p>
-<h2 id="ff14">FF14<a hidden class="anchor" aria-hidden="true" href="#ff14">#</a></h2>
+<h2 id="ff14">FF14</h2>
 <p>マンダヴィルウェポンの関係で旧固定のメンバーとエキルレを延々と回しています。仕事の状況は落ち着いていませんが、絶オメガをやるつもりならそろそろ心づもりをするべきだろうと思っています。</p>
-<h2 id="買った物">買った物<a hidden class="anchor" aria-hidden="true" href="#買った物">#</a></h2>
+<h2 id="買った物">買った物</h2>
 <ul>
 <li>携帯コインホルダー</li>
 </ul>
 <p>何かの配信で見かけて、月に一回程度現金を持ち歩く必要があるので購入しました。普段は紙幣とカードをマネークリップに入れて持ち歩いているのですが、硬貨の取り扱いに困っていたのでとても助かってます。</p>
-<h2 id="買った本">買った本<a hidden class="anchor" aria-hidden="true" href="#買った本">#</a></h2>
+<h2 id="買った本">買った本</h2>
 <ul>
 <li>魔法少女リリカルなのはViVid(18)</li>
 <li>魔法少女リリカルなのはViVid(19)</li>
@@ -354,62 +275,30 @@ sudo: If sudo is running in a container, you may need to adjust the container co
 <li>敗者のゲーム［原著第８版］</li>
 </ul>
 <p>種別を問わず読書量を増やそうということで色々買っています。厳密には一月中には読んでいないのですが、葬送のフリーレンはとても楽しめました。あと、新旧NISAに資産の殆どを突っ込んでいる割には読んだことが無かったので敗者のゲームも読んでいます。色んな動画やブログで述べられている様な事がしつこいくらい繰り返し書かれている良い書籍だと思います。</p>
-
 </section>
 
-  
-  
-
-  
-  
-  
-  
-  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-    
-    <a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://www.y103.org/post/2024/03/2024%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span class="mr-1.5">←</span><span>2024年の02月を振り返る</span></a>
-    
-    
-    <a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span>2023年の12月と2023年全体を振り返る</span><span class="ml-1.5">→</span></a>
-    
-  </nav>
-  
-  
-
-  
-  
-
-  
-  
-
-  
-
-
-  
-</article>
-
-
-    </main>
-
-    <footer
-  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://www.y103.org/post/2024/03/2024%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>2024年の02月を振り返る</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="https://www.y103.org/post/2024/01/2023%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%81%A82023%E5%B9%B4%E5%85%A8%E4%BD%93%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"
+      ><span>2023年の12月と2023年全体を振り返る</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
-  <div class="mr-auto">
-    &copy; 2025
-    <a class="link" href="https://www.y103.org/">www.y103.org</a>
-  </div>
+  <div class="mr-auto">www.y103.org is licensed under CC-BY-4.0.</div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
-    >Powered by Hugo️️</a
+    >powered by hugo️️</a
   >️
   <a
     class="link"
     href="https://github.com/nanxiaobei/hugo-paper"
     rel="noopener"
     target="_blank"
-    >✎ Paper</a
+    >hugo-paper</a
   >
 </footer>
-
-  </body>
+</body>
 </html>

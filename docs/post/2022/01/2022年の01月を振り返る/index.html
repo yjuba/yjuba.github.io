@@ -6,42 +6,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <html
   class="not-ready lg:text-base"
-  style="--bg: #faf8f1"
+  style="--bg:#faf8f1"
   lang="ja"
->
-  <head>
+  dir="ltr"
+><head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -55,125 +25,96 @@
   
   <meta name="theme-color" />
 
-  
-  
-  
-  
   <meta name="description" content="月に一回の更新を実現するために始めた毎月の振り返り投稿も一年を超えて二年目に突入しました。元々文章を書く量が減っているのを何とかしたいという動機で始めたような気がしていますが、気がつけば仕事では日本語を書くことが支配的になり、逆にプログラムを書くことがなくなってしまいました。次は月に一回でも更新するプログラムを書くべなのかもしれませんが、毎月先月の自分という他人のコードを脳内の読み込む時間となるだけだと思うので現状前向きではありません。
-仕事関係 12月末で四半期が終わったこともあり、評価周りで文章の作成と調整業務に追われています。油断しているとすぐに期末評価の時期がやってくるのでそれまでにやるべき事をやってしまいたい所です。ここ暫くは採用6割、評価関係2割、その他2割程度の気持ちでやっていましたが、状況的には評価関係を、個人的にはもう少し技術的な所をやりたいという気持ちがあるのでリバランスを進めていく所存です。
-プライベート 開発環境 2020年の年末頃にVMWare Workstation Pro上のDebian &#43; GoLandを使う環境からWSL2 &#43; VSCodeに乗り換えましたが続いています。仕事でもプライベートでも同様の構成を取っていたのですが、メインPCの更新に伴いプライベートでは手元のWSL2環境を辞めRemote WSLからRemote SSHへ切り替えました。Remote SSH先は都合のいい機材が無かったので現状Raspberry Pi4の4GBで代用しています。手元のWindowsマシンからリモートのLinuxへgpg-agentの転送をしていますが、セットアップに大層苦労したので忘れる前に記事にまとめます。
-Raspberry Pi4の4GBで作業をしていて大きな不満は無いわけですが、ふと思い起こして初めて新品で買って貰ったパソコンに搭載されていたPentium D（正確な型番は怪しい）と比べてみるとPassMarkのスコアで倍以上の差 がありました。当時そのパソコンでMMOをプレイしていたことを思い起こすと少々の作業では困らないのも道理ですね。
-Blog 自作テーマを暫く使っていましたが、若干の修正で要望に合うテーマ を見つけたので切り替えました。大本のテーマの状態だと文章を折り返す幅が狭いと感じたのでそこだけ広げて利用しています。後からコードブロックの部分が好みに合わない事が発覚したので追々そこも対応を入れる予定です。
-FF14 編極編零式の攻略が予定通り二週間で完了しました。スケジュールとしては想定通りの結果となり一安心ですが、少なからずトラブルもあったので次回以降に向けて自分自身振り返るべき所は振り返りたいと思います。6.08になりレンジにも調整が入りましたが、詩人と踊り子で着替える身としては特に憂うことのない結果だったので安心しています。詩人のめんどくさいところはもう少し何とかなると良いのですが。
+仕事関係
+12月末で四半期が終わったこともあり、評価周りで文章の作成と調整業務に追われています。油断しているとすぐに期末評価の時期がやってくるのでそれまでにやるべき事をやってしまいたい所です。ここ暫くは採用6割、評価関係2割、その他2割程度の気持ちでやっていましたが、状況的には評価関係を、個人的にはもう少し技術的な所をやりたいという気持ちがあるのでリバランスを進めていく所存です。
+プライベート
+開発環境
+2020年の年末頃にVMWare Workstation Pro上のDebian &#43; GoLandを使う環境からWSL2 &#43; VSCodeに乗り換えましたが続いています。仕事でもプライベートでも同様の構成を取っていたのですが、メインPCの更新に伴いプライベートでは手元のWSL2環境を辞めRemote WSLからRemote SSHへ切り替えました。Remote SSH先は都合のいい機材が無かったので現状Raspberry Pi4の4GBで代用しています。手元のWindowsマシンからリモートのLinuxへgpg-agentの転送をしていますが、セットアップに大層苦労したので忘れる前に記事にまとめます。
+Raspberry Pi4の4GBで作業をしていて大きな不満は無いわけですが、ふと思い起こして初めて新品で買って貰ったパソコンに搭載されていたPentium D（正確な型番は怪しい）と比べてみるとPassMarkのスコアで倍以上の差
+がありました。当時そのパソコンでMMOをプレイしていたことを思い起こすと少々の作業では困らないのも道理ですね。
+Blog
+自作テーマを暫く使っていましたが、若干の修正で要望に合うテーマ
+を見つけたので切り替えました。大本のテーマの状態だと文章を折り返す幅が狭いと感じたのでそこだけ広げて利用しています。後からコードブロックの部分が好みに合わない事が発覚したので追々そこも対応を入れる予定です。
+FF14
+編極編零式の攻略が予定通り二週間で完了しました。スケジュールとしては想定通りの結果となり一安心ですが、少なからずトラブルもあったので次回以降に向けて自分自身振り返るべき所は振り返りたいと思います。6.08になりレンジにも調整が入りましたが、詩人と踊り子で着替える身としては特に憂うことのない結果だったので安心しています。詩人のめんどくさいところはもう少し何とかなると良いのですが。
 また、次の10年へ向けた諸々が開示されるPLLが予定されているので期待しています。次の拡張ではそろそろPS4もお役御免でしょうから合わせてPC側の要求スペックが上がるだろうと想像しています。それまでには半導体の供給が安定して欲しい所です。
-買った物 ダイニチ HD-RXT521 x 2台 厳密に言えば1台はふるさと納税で返礼品として貰いました。今まで加湿はダイキンの加湿機能付き空気清浄機に任せていたのですが、引っ越して部屋数が増えたのと手入れが面倒なので加湿器は加湿器として独立させました。加湿は迅速で音も静か水も大量に入るので現時点では満足しています。
+買った物
+
+ダイニチ HD-RXT521 x 2台
+
+厳密に言えば1台はふるさと納税で返礼品として貰いました。今まで加湿はダイキンの加湿機能付き空気清浄機に任せていたのですが、引っ越して部屋数が増えたのと手入れが面倒なので加湿器は加湿器として独立させました。加湿は迅速で音も静か水も大量に入るので現時点では満足しています。
 次はそろそろ水拭きと部屋の形を認識できるロボット掃除機が欲しいと思っています。また、買い物とは別次元ですが、そろそろ真面目に猫を飼うために動き出したいです。" />
-  <meta name="author" content="yjuba" />
-  
+  <meta name="author" content="yjuba" /><link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
 
-  
-  
-  
-  
-  
-  
-  <link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
-
-  
-  
-  
-  
   
   <link rel="preload" as="image" href="https://www.y103.org/theme.png" />
 
-  
-  
-  
-  
   <link rel="preload" as="image" href="https://www.y103.org/android-chrome-512x512.png" />
-  
-  
 
-  
-  
-  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" />
-  
-  <link rel="preload" as="image" href="https://www.y103.org/github.svg" />
-  
-  
+  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" /><link rel="preload" as="image" href="https://www.y103.org/github.svg" /><link rel="preload" as="image" href="https://www.y103.org/bluesky.svg" />
 
-  
-  
   <script
     defer
     src="https://www.y103.org/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
-  
 
   
-  
-  
+  <link
+    rel="icon"
+    href="https://www.y103.org/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://www.y103.org/apple-touch-icon.png"
+  />
 
-  
-  <link rel="icon" href="https://www.y103.org/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://www.y103.org/apple-touch-icon.png" />
-
-  
-  <meta name="generator" content="Hugo 0.124.1">
-
-  
-  
-  
-  
-  
+  <meta name="generator" content="Hugo 0.147.1">
   <meta itemprop="name" content="2022年の01月を振り返る">
-<meta itemprop="description" content="2022年の01月を振り返る"><meta itemprop="datePublished" content="2022-01-31T14:18:41+00:00" />
-<meta itemprop="dateModified" content="2022-01-31T14:18:41+00:00" />
-<meta itemprop="wordCount" content="33">
-<meta itemprop="keywords" content="" />
-  
-  <meta property="og:title" content="2022年の01月を振り返る" />
-<meta property="og:description" content="2022年の01月を振り返る" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.y103.org/post/2022/01/2022%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-01-31T14:18:41+00:00" />
-<meta property="article:modified_time" content="2022-01-31T14:18:41+00:00" />
+  <meta itemprop="description" content="2022年の01月を振り返る">
+  <meta itemprop="datePublished" content="2022-01-31T14:18:41+00:00">
+  <meta itemprop="dateModified" content="2022-01-31T14:18:41+00:00">
+  <meta itemprop="wordCount" content="33">
+  <meta itemprop="keywords" content="振り返り"><meta property="og:url" content="https://www.y103.org/post/2022/01/2022%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/">
+  <meta property="og:site_name" content="www.y103.org">
+  <meta property="og:title" content="2022年の01月を振り返る">
+  <meta property="og:description" content="2022年の01月を振り返る">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2022-01-31T14:18:41+00:00">
+    <meta property="article:modified_time" content="2022-01-31T14:18:41+00:00">
 
-  
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="2022年の01月を振り返る"/>
-<meta name="twitter:description" content="2022年の01月を振り返る"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2022年の01月を振り返る">
+  <meta name="twitter:description" content="2022年の01月を振り返る">
 
-  
-  
-  
   <link rel="canonical" href="https://www.y103.org/post/2022/01/2022%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/" />
-  
-  
 </head>
-
-  <body class="text-black duration-200 ease-out dark:text-white">
-    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-  <div class="relative z-50 mr-auto flex items-center">
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
-      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      class="-translate-y-[1px] text-2xl font-medium"
       href="https://www.y103.org/"
       >www.y103.org</a
     >
     <div
-      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
       role="button"
       aria-label="Dark"
     ></div>
   </div>
 
   <div
-    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
     role="button"
     aria-label="Menu"
   ></div>
-
-  
 
   <script>
     
@@ -219,142 +160,85 @@ FF14 編極編零式の攻略が予定通り二週間で完了しました。ス
   </script>
 
   <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
-  >
-    
-    
-
-    
-    <nav
-      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
     >
-      
       <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./twitter.svg)"
         href="https://twitter.com/yutaka_j08"
         target="_blank"
         rel="me"
-      >
-        twitter
-      </a>
-      
+      >twitter</a>
       <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
         style="--url: url(./github.svg)"
         href="https://github.com/yjuba"
         target="_blank"
         rel="me"
-      >
-        github
-      </a>
-      
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./bluesky.svg)"
+        href="https://bsky.app/profile/y103.org"
+        target="_blank"
+        rel="me"
+      >bluesky</a>
     </nav>
-    
   </div>
 </header>
-
-
-    <main
-      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
-    >
-      
-
-<article>
-  <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">2022年の01月を振り返る</h1>
-
-    
-    <div class="text-sm antialiased opacity-60">
-      
-      <time>2022/01/31</time>
-      
-      
-      
-      
-      <span class="mx-1">&middot;</span>
-      <span>yjuba</span>
-      
-    </div>
-    
-  </header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">2022年の01月を振り返る</h1><div class="text-xs antialiased opacity-60"><time>2022/01/31</time><span class="mx-1">&middot;</span>
+      <span>yjuba</span></div></header>
 
   <section><p>月に一回の更新を実現するために始めた毎月の振り返り投稿も一年を超えて二年目に突入しました。元々文章を書く量が減っているのを何とかしたいという動機で始めたような気がしていますが、気がつけば仕事では日本語を書くことが支配的になり、逆にプログラムを書くことがなくなってしまいました。次は月に一回でも更新するプログラムを書くべなのかもしれませんが、毎月先月の自分という他人のコードを脳内の読み込む時間となるだけだと思うので現状前向きではありません。</p>
-<h1 id="仕事関係">仕事関係<a hidden class="anchor" aria-hidden="true" href="#仕事関係">#</a></h1>
+<h1 id="仕事関係">仕事関係</h1>
 <p>12月末で四半期が終わったこともあり、評価周りで文章の作成と調整業務に追われています。油断しているとすぐに期末評価の時期がやってくるのでそれまでにやるべき事をやってしまいたい所です。ここ暫くは採用6割、評価関係2割、その他2割程度の気持ちでやっていましたが、状況的には評価関係を、個人的にはもう少し技術的な所をやりたいという気持ちがあるのでリバランスを進めていく所存です。</p>
-<h1 id="プライベート">プライベート<a hidden class="anchor" aria-hidden="true" href="#プライベート">#</a></h1>
-<h2 id="開発環境">開発環境<a hidden class="anchor" aria-hidden="true" href="#開発環境">#</a></h2>
+<h1 id="プライベート">プライベート</h1>
+<h2 id="開発環境">開発環境</h2>
 <p>2020年の年末頃にVMWare Workstation Pro上のDebian + GoLandを使う環境からWSL2 + VSCodeに乗り換えましたが続いています。仕事でもプライベートでも同様の構成を取っていたのですが、メインPCの更新に伴いプライベートでは手元のWSL2環境を辞めRemote WSLからRemote SSHへ切り替えました。Remote SSH先は都合のいい機材が無かったので現状Raspberry Pi4の4GBで代用しています。手元のWindowsマシンからリモートのLinuxへgpg-agentの転送をしていますが、セットアップに大層苦労したので忘れる前に記事にまとめます。</p>
 <p>Raspberry Pi4の4GBで作業をしていて大きな不満は無いわけですが、ふと思い起こして初めて新品で買って貰ったパソコンに搭載されていたPentium D（正確な型番は怪しい）と比べてみると<a href="https://www.cpubenchmark.net/compare/BCM2711-vs-Intel-Pentium-D-805/4297vs1125" target="_blank">PassMarkのスコアで倍以上の差</a>
 がありました。当時そのパソコンでMMOをプレイしていたことを思い起こすと少々の作業では困らないのも道理ですね。</p>
-<h2 id="blog">Blog<a hidden class="anchor" aria-hidden="true" href="#blog">#</a></h2>
+<h2 id="blog">Blog</h2>
 <p>自作テーマを暫く使っていましたが、<a href="https://github.com/LukasJoswiak/etch" target="_blank">若干の修正で要望に合うテーマ</a>
 を見つけたので切り替えました。大本のテーマの状態だと文章を折り返す幅が狭いと感じたのでそこだけ広げて利用しています。後からコードブロックの部分が好みに合わない事が発覚したので追々そこも対応を入れる予定です。</p>
-<h2 id="ff14">FF14<a hidden class="anchor" aria-hidden="true" href="#ff14">#</a></h2>
+<h2 id="ff14">FF14</h2>
 <p>編極編零式の攻略が予定通り二週間で完了しました。スケジュールとしては想定通りの結果となり一安心ですが、少なからずトラブルもあったので次回以降に向けて自分自身振り返るべき所は振り返りたいと思います。6.08になりレンジにも調整が入りましたが、詩人と踊り子で着替える身としては特に憂うことのない結果だったので安心しています。詩人のめんどくさいところはもう少し何とかなると良いのですが。</p>
 <p>また、次の10年へ向けた諸々が開示されるPLLが予定されているので期待しています。次の拡張ではそろそろPS4もお役御免でしょうから合わせてPC側の要求スペックが上がるだろうと想像しています。それまでには半導体の供給が安定して欲しい所です。</p>
-<h1 id="買った物">買った物<a hidden class="anchor" aria-hidden="true" href="#買った物">#</a></h1>
+<h1 id="買った物">買った物</h1>
 <ul>
 <li>ダイニチ HD-RXT521 x 2台</li>
 </ul>
 <p>厳密に言えば1台はふるさと納税で返礼品として貰いました。今まで加湿はダイキンの加湿機能付き空気清浄機に任せていたのですが、引っ越して部屋数が増えたのと手入れが面倒なので加湿器は加湿器として独立させました。加湿は迅速で音も静か水も大量に入るので現時点では満足しています。</p>
 <p>次はそろそろ水拭きと部屋の形を認識できるロボット掃除機が欲しいと思っています。また、買い物とは別次元ですが、そろそろ真面目に猫を飼うために動き出したいです。</p>
-
 </section>
 
-  
-  
-
-  
-  
-  
-  
-  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-    
-    <a class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://www.y103.org/post/2022/03/2022%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span class="mr-1.5">←</span><span>2022年の02月を振り返る</span></a>
-    
-    
-    <a class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://www.y103.org/post/2021/12/2021%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"><span>2021年の12月を振り返る</span><span class="ml-1.5">→</span></a>
-    
-  </nav>
-  
-  
-
-  
-  
-
-  
-  
-
-  
-
-
-  
-</article>
-
-
-    </main>
-
-    <footer
-  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://www.y103.org/post/2022/03/2022%E5%B9%B4%E3%81%AE02%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>2022年の02月を振り返る</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="https://www.y103.org/post/2021/12/2021%E5%B9%B4%E3%81%AE12%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"
+      ><span>2021年の12月を振り返る</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
-  <div class="mr-auto">
-    &copy; 2025
-    <a class="link" href="https://www.y103.org/">www.y103.org</a>
-  </div>
+  <div class="mr-auto">www.y103.org is licensed under CC-BY-4.0.</div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
-    >Powered by Hugo️️</a
+    >powered by hugo️️</a
   >️
   <a
     class="link"
     href="https://github.com/nanxiaobei/hugo-paper"
     rel="noopener"
     target="_blank"
-    >✎ Paper</a
+    >hugo-paper</a
   >
 </footer>
-
-  </body>
+</body>
 </html>

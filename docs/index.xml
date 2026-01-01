@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>ja</language>
     <copyright>www.y103.org is licensed under CC-BY-4.0.</copyright>
-    <lastBuildDate>Thu, 01 Jan 2026 12:59:54 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 13:59:54 +0000</lastBuildDate>
     <atom:link href="https://www.y103.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>棚卸し（2025-12）</title>
+      <link>https://www.y103.org/post/2026/01/%E6%A3%9A%E5%8D%B8%E3%81%972025-12/</link>
+      <pubDate>Thu, 01 Jan 2026 13:59:54 +0000</pubDate>
+      <guid>https://www.y103.org/post/2026/01/%E6%A3%9A%E5%8D%B8%E3%81%972025-12/</guid>
+      <description>&lt;p&gt;よく見ているブログに感化されて真似しています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;keycloak&#34;&gt;Keycloak&lt;/h2&gt;&#xA;&lt;p&gt;主たる業務として取り組んでいるのがシングルサインオン基盤の構築・運用のため、主戦場となっています。やりたいことや要件が増える度にJavaが分からないなりに各種SPI（Service Provider Interface）を用いて機能を拡張しています。&lt;/p&gt;&#xA;&lt;p&gt;ここ2～3年はKeycloakに時間をかけていることが多い分、かなり理解度が上がってきましたが、私が理解したことが他人に伝わっていないのが課題です。&lt;/p&gt;&#xA;&lt;p&gt;また、おそらく歴史的経緯だと推測していますが、所々暗黙の挙動や直感的でない挙動にぶつかることが多いので、もう少し余裕が出てきたら文章化やアップストリームへの貢献も視野に入れたいですね。&lt;/p&gt;&#xA;&lt;h2 id=&#34;go&#34;&gt;Go&lt;/h2&gt;&#xA;&lt;p&gt;個人的に最も手に馴染んでいるので、KeycloakのSPI以外の実装はほぼ全てGoで実装しています。2026年はもう少しテストしやすいコードについて思いを馳せるべきかなとは思っています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;playwright&#34;&gt;Playwright&lt;/h2&gt;&#xA;&lt;p&gt;主にKeycloakに対するE2Eテストに使用しています。Claude Codeの登場もあり、よりテストが書きやすくなったはずなのですが、テストの拡充まで手が回っていません。2026年はテストの拡充に手を回していきたいですね。&lt;/p&gt;&#xA;&lt;h2 id=&#34;k6&#34;&gt;K6&lt;/h2&gt;&#xA;&lt;p&gt;負荷試験が必要な場合はほぼ間違い無くK6を使っています。シナリオの記載にJavaScript/TypeScriptが必要ですが、余程凝ったテストをしなければそこまで困らないので良しとしています。&lt;/p&gt;&#xA;&lt;p&gt;とりあえず、CPUとメモリさえあれば、1台のマシンで結構な負荷を生み出せるので重宝しています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;duckdb&#34;&gt;DuckDB&lt;/h2&gt;&#xA;&lt;p&gt;運用系のレポートを出力するのに重宝しています。特に、複数のデータソースを一緒くたにJOINして出力できるのが最高です。KeycloakのDBと他のDBをJOINして、Keycloak単体では不足する情報を付加してレポートを出しています。&lt;/p&gt;&#xA;&lt;p&gt;2026年はログの集計や解析にも活かしたいと思っています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;claude-code&#34;&gt;Claude Code&lt;/h2&gt;&#xA;&lt;p&gt;MaxプランからEnterpriseプランに移行しました（移行されました）。コードの生成・レビュー・調査に加えて、AWS環境の調査やログの調査など、あらゆる業務に活用しています。&lt;/p&gt;&#xA;&lt;p&gt;正直これが無ければ2025年の業務量を捌くのは難しかっただろうと思います。一方で、今の価格でいつまで使えるのか戦々恐々としています。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;2025年はClaude Codeに助けられながらKeycloakを頑張った1年だったと思います。&lt;/p&gt;&#xA;&lt;p&gt;現状、特に運用周りは優秀なメンバーのおかげで人力で回せてしまっています。ですが、特に品質に関わる部分については自動化を進める必要性を痛感しています。2026年前半はここを頑張りたい。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2025年の11月12月を振り返る</title>
       <link>https://www.y103.org/post/2026/01/2025%E5%B9%B4%E3%81%AE11%E6%9C%8812%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>

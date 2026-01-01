@@ -1,0 +1,244 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="ja"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>棚卸し（2025-12） - www.y103.org</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="よく見ているブログに感化されて真似しています。
+Keycloak
+主たる業務として取り組んでいるのがシングルサインオン基盤の構築・運用のため、主戦場となっています。やりたいことや要件が増える度にJavaが分からないなりに各種SPI（Service Provider Interface）を用いて機能を拡張しています。
+ここ2～3年はKeycloakに時間をかけていることが多い分、かなり理解度が上がってきましたが、私が理解したことが他人に伝わっていないのが課題です。
+また、おそらく歴史的経緯だと推測していますが、所々暗黙の挙動や直感的でない挙動にぶつかることが多いので、もう少し余裕が出てきたら文章化やアップストリームへの貢献も視野に入れたいですね。
+Go
+個人的に最も手に馴染んでいるので、KeycloakのSPI以外の実装はほぼ全てGoで実装しています。2026年はもう少しテストしやすいコードについて思いを馳せるべきかなとは思っています。
+Playwright
+主にKeycloakに対するE2Eテストに使用しています。Claude Codeの登場もあり、よりテストが書きやすくなったはずなのですが、テストの拡充まで手が回っていません。2026年はテストの拡充に手を回していきたいですね。
+K6
+負荷試験が必要な場合はほぼ間違い無くK6を使っています。シナリオの記載にJavaScript/TypeScriptが必要ですが、余程凝ったテストをしなければそこまで困らないので良しとしています。
+とりあえず、CPUとメモリさえあれば、1台のマシンで結構な負荷を生み出せるので重宝しています。
+DuckDB
+運用系のレポートを出力するのに重宝しています。特に、複数のデータソースを一緒くたにJOINして出力できるのが最高です。KeycloakのDBと他のDBをJOINして、Keycloak単体では不足する情報を付加してレポートを出しています。
+2026年はログの集計や解析にも活かしたいと思っています。
+Claude Code
+MaxプランからEnterpriseプランに移行しました（移行されました）。コードの生成・レビュー・調査に加えて、AWS環境の調査やログの調査など、あらゆる業務に活用しています。
+正直これが無ければ2025年の業務量を捌くのは難しかっただろうと思います。一方で、今の価格でいつまで使えるのか戦々恐々としています。
+
+2025年はClaude Codeに助けられながらKeycloakを頑張った1年だったと思います。
+現状、特に運用周りは優秀なメンバーのおかげで人力で回せてしまっています。ですが、特に品質に関わる部分については自動化を進める必要性を痛感しています。2026年前半はここを頑張りたい。" />
+  <meta name="author" content="yjuba" /><link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="https://www.y103.org/theme.png" />
+
+  <link rel="preload" as="image" href="https://www.y103.org/android-chrome-512x512.png" />
+
+  <link rel="preload" as="image" href="https://www.y103.org/twitter.svg" /><link rel="preload" as="image" href="https://www.y103.org/github.svg" /><link rel="preload" as="image" href="https://www.y103.org/bluesky.svg" />
+
+  <script
+    defer
+    src="https://www.y103.org/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="https://www.y103.org/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="https://www.y103.org/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.147.1">
+  <meta itemprop="name" content="棚卸し（2025-12）">
+  <meta itemprop="description" content="棚卸し（2025-12）">
+  <meta itemprop="datePublished" content="2026-01-01T13:59:54+00:00">
+  <meta itemprop="dateModified" content="2026-01-01T13:59:54+00:00">
+  <meta itemprop="wordCount" content="25">
+  <meta itemprop="keywords" content="棚卸し"><meta property="og:url" content="https://www.y103.org/post/2026/01/%E6%A3%9A%E5%8D%B8%E3%81%972025-12/">
+  <meta property="og:site_name" content="www.y103.org">
+  <meta property="og:title" content="棚卸し（2025-12）">
+  <meta property="og:description" content="棚卸し（2025-12）">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-01-01T13:59:54+00:00">
+    <meta property="article:modified_time" content="2026-01-01T13:59:54+00:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="棚卸し（2025-12）">
+  <meta name="twitter:description" content="棚卸し（2025-12）">
+
+  <link rel="canonical" href="https://www.y103.org/post/2026/01/%E6%A3%9A%E5%8D%B8%E3%81%972025-12/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="https://www.y103.org/"
+      >www.y103.org</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/yutaka_j08"
+        target="_blank"
+        rel="me"
+      >twitter</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/yjuba"
+        target="_blank"
+        rel="me"
+      >github</a>
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./bluesky.svg)"
+        href="https://bsky.app/profile/y103.org"
+        target="_blank"
+        rel="me"
+      >bluesky</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">棚卸し（2025-12）</h1><div class="text-xs antialiased opacity-60"><time>2026/01/01</time><span class="mx-1">&middot;</span>
+      <span>yjuba</span></div></header>
+
+  <section><p>よく見ているブログに感化されて真似しています。</p>
+<h2 id="keycloak">Keycloak</h2>
+<p>主たる業務として取り組んでいるのがシングルサインオン基盤の構築・運用のため、主戦場となっています。やりたいことや要件が増える度にJavaが分からないなりに各種SPI（Service Provider Interface）を用いて機能を拡張しています。</p>
+<p>ここ2～3年はKeycloakに時間をかけていることが多い分、かなり理解度が上がってきましたが、私が理解したことが他人に伝わっていないのが課題です。</p>
+<p>また、おそらく歴史的経緯だと推測していますが、所々暗黙の挙動や直感的でない挙動にぶつかることが多いので、もう少し余裕が出てきたら文章化やアップストリームへの貢献も視野に入れたいですね。</p>
+<h2 id="go">Go</h2>
+<p>個人的に最も手に馴染んでいるので、KeycloakのSPI以外の実装はほぼ全てGoで実装しています。2026年はもう少しテストしやすいコードについて思いを馳せるべきかなとは思っています。</p>
+<h2 id="playwright">Playwright</h2>
+<p>主にKeycloakに対するE2Eテストに使用しています。Claude Codeの登場もあり、よりテストが書きやすくなったはずなのですが、テストの拡充まで手が回っていません。2026年はテストの拡充に手を回していきたいですね。</p>
+<h2 id="k6">K6</h2>
+<p>負荷試験が必要な場合はほぼ間違い無くK6を使っています。シナリオの記載にJavaScript/TypeScriptが必要ですが、余程凝ったテストをしなければそこまで困らないので良しとしています。</p>
+<p>とりあえず、CPUとメモリさえあれば、1台のマシンで結構な負荷を生み出せるので重宝しています。</p>
+<h2 id="duckdb">DuckDB</h2>
+<p>運用系のレポートを出力するのに重宝しています。特に、複数のデータソースを一緒くたにJOINして出力できるのが最高です。KeycloakのDBと他のDBをJOINして、Keycloak単体では不足する情報を付加してレポートを出しています。</p>
+<p>2026年はログの集計や解析にも活かしたいと思っています。</p>
+<h2 id="claude-code">Claude Code</h2>
+<p>MaxプランからEnterpriseプランに移行しました（移行されました）。コードの生成・レビュー・調査に加えて、AWS環境の調査やログの調査など、あらゆる業務に活用しています。</p>
+<p>正直これが無ければ2025年の業務量を捌くのは難しかっただろうと思います。一方で、今の価格でいつまで使えるのか戦々恐々としています。</p>
+<hr>
+<p>2025年はClaude Codeに助けられながらKeycloakを頑張った1年だったと思います。</p>
+<p>現状、特に運用周りは優秀なメンバーのおかげで人力で回せてしまっています。ですが、特に品質に関わる部分については自動化を進める必要性を痛感しています。2026年前半はここを頑張りたい。</p>
+</section>
+
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="https://www.y103.org/post/2026/01/2025%E5%B9%B4%E3%81%AE11%E6%9C%8812%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/"
+      ><span>2025年の11月12月を振り返る</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">www.y103.org is licensed under CC-BY-4.0.</div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

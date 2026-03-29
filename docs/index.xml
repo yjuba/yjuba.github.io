@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>ja</language>
     <copyright>www.y103.org is licensed under CC-BY-4.0.</copyright>
-    <lastBuildDate>Sat, 14 Feb 2026 07:37:10 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2026 13:59:59 +0000</lastBuildDate>
     <atom:link href="https://www.y103.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026年02月と03月を振り返る</title>
+      <link>https://www.y103.org/post/2026/03/2026%E5%B9%B402%E6%9C%88%E3%81%A803%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
+      <pubDate>Sun, 29 Mar 2026 13:59:59 +0000</pubDate>
+      <guid>https://www.y103.org/post/2026/03/2026%E5%B9%B402%E6%9C%88%E3%81%A803%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
+      <description>&lt;p&gt;仕事の忙しさにかまけていたら書くタイミングを逃していました。&lt;/p&gt;&#xA;&lt;h2 id=&#34;02月にやりたかったこと&#34;&gt;02月にやりたかったこと&lt;/h2&gt;&#xA;&lt;h3 id=&#34;メインpcの改善&#34;&gt;メインPCの改善&lt;/h3&gt;&#xA;&lt;p&gt;それぞれ、下記のパーツを採用しました。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ケース: Fractal Design North XL Chalk White TG Clear&lt;/li&gt;&#xA;&lt;li&gt;GPU: MSI GeForce RTX 5080 16G GAMING TRIO OC&lt;/li&gt;&#xA;&lt;li&gt;PSU: CORSAIR RM1000x 2024 Cybenetics Gold ATX3.1&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;CORSAIR電源は始めて採用しましたが、ケーブルが扱いやすくて良かったです。新規に組み直す以外で初めてケースを交換しましたが、ケースを交換するだけで大分気分が変わるんだなということを実感しました。今はCORSAIRのFrame 5000Dが気になっています。&lt;/p&gt;&#xA;&lt;p&gt;Define 7 CompacからNorth XLへの乗り換えという事で大分大きくなりました、結論デカいケースが静かで冷えますね。メインPCの用途では2度とコンパクトなケースは採用しないと思います。&lt;/p&gt;&#xA;&lt;p&gt;そろそろ、メイン機をサブ機に降格して、現サブ機を退役させてあげたい。&lt;/p&gt;&#xA;&lt;h2 id=&#34;04月にやりたいこと&#34;&gt;04月にやりたいこと&lt;/h2&gt;&#xA;&lt;p&gt;当初は絶固定のメンバーを集める、が入ると思ったのですが書き忘れているうちに集まりました。継続、応募いただいた各位に感謝申し上げます。&lt;/p&gt;&#xA;&lt;h3 id=&#34;健康診断を乗り切る&#34;&gt;健康診断を乗り切る&lt;/h3&gt;&#xA;&lt;p&gt;なぜかやたら早くやってきました。あんまり良い結果にならない気がしますが･･･&lt;/p&gt;&#xA;&lt;h2 id=&#34;仕事&#34;&gt;仕事&lt;/h2&gt;&#xA;&lt;p&gt;腹案として温めていた案が急に浮上したため、5～6年ぶりにRADIUSに触れています。当時に比べるとLLMのおかげで実装コスト自体は低かったのですが、本番運用に向けて細かい所を作り込むのは骨が折れました。UDPの上にそのまま乗っているプロトコルはめんどくさすぎます。&lt;/p&gt;&#xA;&lt;p&gt;いい時代になったなと思う一方で、今の価格でいつまで使えるか分からないので、最近はローカルLLMに少し興味があります。CursorのComposer 2はKimi K2.5を強化学習したモデルだと話題ですが、オープンモデルのベンチマークも以前に比べると向上しているので、そのうち手軽にOpus 4位の性能を手元で使えたら嬉しいなと思っています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;趣味&#34;&gt;趣味&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ff14&#34;&gt;FF14&lt;/h3&gt;&#xA;&lt;p&gt;先日の第91回PLLにて7.5x中に絶が実装予定であることが公表されました。これに伴い零式からの継続を募った所、自分を含め7名が継続となりました。追加の1名は募集を開始したところ、早々に複数の方から応募があり、無事に決まりました。&lt;/p&gt;&#xA;&lt;p&gt;今回で離脱される方とは丸1年ほど一緒に活動させていただきました、ありがとうございました。また、他ゲーを含め機会があれば遊んでやってください。&lt;/p&gt;&#xA;&lt;h2 id=&#34;買った物&#34;&gt;買った物&lt;/h2&gt;&#xA;&lt;p&gt;日用品を除くとPCパーツぐらいしか買っていないですね。絶もあるので、そろそろAG03だけ乗り換えるか悩んでいます。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Fractal Design North XL Chalk White TG Clear&lt;/li&gt;&#xA;&lt;li&gt;MSI GeForce RTX 5080 16G GAMING TRIO OC&lt;/li&gt;&#xA;&lt;li&gt;CORSAIR RM1000x 2024 Cybenetics Gold ATX3.1&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;&#xA;&lt;p&gt;今の家を買ってから始めて換気口のフィルタを交換しました。相当汚れているのは理解しつつ、対して影響は無いだろうと思っていましたが、心なしか花粉症の影響が減った気がします。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2026年の01月を振り返る</title>
       <link>https://www.y103.org/post/2026/02/2026%E5%B9%B4%E3%81%AE01%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>

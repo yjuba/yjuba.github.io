@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>ja</language>
     <copyright>www.y103.org is licensed under CC-BY-4.0.</copyright>
-    <lastBuildDate>Thu, 07 May 2026 14:17:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 07:26:14 +0000</lastBuildDate>
     <atom:link href="https://www.y103.org/categories/%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026年05月～07月を振り返る</title>
+      <link>https://www.y103.org/post/2026/08/2026%E5%B9%B405%E6%9C%8807%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>
+      <pubDate>Sat, 01 Aug 2026 07:26:14 +0000</pubDate>
+      <guid>https://www.y103.org/post/2026/08/2026%E5%B9%B405%E6%9C%8807%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</guid>
+      <description>&lt;p&gt;4月の振り返りでは、 &lt;code&gt;とりあえず04月分は何とか通常通り書けたので安心しています。05月分も絶が始まるまでに書けば大丈夫でしょう。&lt;/code&gt; と言っていましたが案の定失敗して今に至ります。&lt;/p&gt;&#xA;&lt;h2 id=&#34;05月07月にやりたかったこと&#34;&gt;05月～07月にやりたかったこと&lt;/h2&gt;&#xA;&lt;h3 id=&#34;減量&#34;&gt;減量&lt;/h3&gt;&#xA;&lt;p&gt;現状維持が限界でした。もう少し真面目に考える必要があります。&lt;/p&gt;&#xA;&lt;h3 id=&#34;fitbitの新調&#34;&gt;Fitbitの新調&lt;/h3&gt;&#xA;&lt;p&gt;Fitbit Airは求めている物ではありませんでした。諦めて次のPixel Watchが出るタイミングで乗り換えを検討しています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;仕事&#34;&gt;仕事&lt;/h2&gt;&#xA;&lt;p&gt;2023年から取り組んでいる現在の案件の終わりが見えてきました。途中別件に首を突っ込んだりしていましたが、直近は絶や有給の期限切れもあるため、稼働時間は落ち着いています。一旦ラストスパートを走りきったら次の方針だけ決めて1度しっかり休みを挟みたいと思っています。&lt;/p&gt;&#xA;&lt;p&gt;引き続き近しい案件に携わる予定ですが、増員に大きな期待が持てないので、AIを含め以下に人が楽をするかを軸に添えて頑張りたいと考えています。&lt;/p&gt;&#xA;&lt;h2 id=&#34;趣味&#34;&gt;趣味&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ff14&#34;&gt;FF14&lt;/h3&gt;&#xA;&lt;p&gt;無事、目標としていた1～1.5ヶ月内に7.5絶の攻略を終えることができました。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;ジョブの変更&lt;/li&gt;&#xA;&lt;li&gt;バーストタイミングの変更&lt;/li&gt;&#xA;&lt;li&gt;一部ギミックの不安定さ&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;反省点があるとすれば上記の3点になると思います。特に、1と2に関しては決断すれば良いだけの話なので、変えること・戻すことを恐れずにもう少し早めに判断すれば良かったと思います。&lt;/p&gt;&#xA;&lt;p&gt;コンテンツ自体は、全体を通してカロリーの高いコンテンツではありますが、社会人固定としては丁度良い難易度の調整になっていたと思います。ギミックも、修正前のテレポを除けばよくできており、黄金レイドの締めに相応しいコンテンツでした。（ミッシングの立ち位置はシビアではありますが。）&lt;/p&gt;&#xA;&lt;p&gt;総じて、黄金のレイドコンテンツは非常に楽しく攻略することができました。改めて、一緒に攻略していただいた各位には御礼申し上げます。&lt;/p&gt;&#xA;&lt;h2 id=&#34;買った物&#34;&gt;買った物&lt;/h2&gt;&#xA;&lt;p&gt;デロンギを持っているのですが、ホッパーの都合で特定の豆で1杯だけということが難しいので購入しました。手引きミルで挽くのは大変ですが、狙った豆でエスプレッソが作りやすいのは良いです。&lt;/p&gt;&#xA;&lt;p&gt;最近のグレード高めのデロンギはホッパーの入れ替えに対応しているようで羨ましいですが、流石にデロンギを買い換える勇気はありません。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;OutIn Nano ポータブル電動エスプレッソマシン&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;終わりに&#34;&gt;終わりに&lt;/h2&gt;&#xA;&lt;p&gt;ブラウザだけで書ければもう少しブログを書きやすいのだろうなと思いつつ、VS CodeとEmacsキーバインドから離れられず今日に至ります。最近はもっぱらCLIでAIと話す日々なので、VS Codeもコードビューワー兼便利ターミナルと化しています。&lt;/p&gt;&#xA;&lt;p&gt;Emacsから離れたように、VS Codeから離れる日が来るのかもしれませんが、人間が手で文章を書いている間は離れられない気がします。仕事では起動が速いのでメモ帳代わりにZedを入れていますが、VS Codeを置き換えるほどの感動は得られていません。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>2026年04月を振り返る</title>
       <link>https://www.y103.org/post/2026/05/2026%E5%B9%B404%E6%9C%88%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B/</link>

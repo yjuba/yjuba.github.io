@@ -6,12 +6,9 @@
 
 
 
-<html
-  class="not-ready lg:text-base"
-  style="--bg:#faf8f1"
+<html class="not-ready lg:text-base" style="--bg:#faf8f1"
   lang="ja"
-  dir="ltr"
-><head>
+  dir="ltr"><head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -44,7 +41,7 @@ https://github.com/prometheus/client_golang/blob/v1.8.0/prometheus/registry_test
 元がprotoファイルから生成されたモデルなので、proto.String
 等を利用すれば良いらしい。せめて、ドキュメントのどこかに一言くらい言及があると嬉しかったかも知れない。
 textfile collectorへの置き換え自体は完了していないので、今は掲載するコードがないが、終わった暁にはサンプルも掲載したい。（単に10月が終わりそうで間に合わないというのも大きいが･･･）" />
-  <meta name="author" content="yjuba" /><link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.css" />
+  <meta name="author" content="yjuba" /><link rel="preload stylesheet" as="style" href="https://www.y103.org/main.min.22cea2c47025a410261bc811379623234b2bf35fc7500252002ce2bdcd20c499.css" integrity="sha256-Is6ixHAlpBAmG8gRN5YjI0sr81/HUAJSACzivc0gxJk=" />
 
   
   <link rel="preload" as="image" href="https://www.y103.org/theme.png" />
@@ -56,7 +53,7 @@ textfile collectorへの置き換え自体は完了していないので、今�
   <script
     defer
     src="https://www.y103.org/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad();"
+    onload="hljs.initHighlightingOnLoad()"
   ></script>
 
   
@@ -69,31 +66,30 @@ textfile collectorへの置き換え自体は完了していないので、今�
     href="https://www.y103.org/apple-touch-icon.png"
   />
 
-  <meta name="generator" content="Hugo 0.147.1">
-  <meta itemprop="name" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
-  <meta itemprop="description" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
-  <meta itemprop="datePublished" content="2020-10-31T17:00:02+09:00">
-  <meta itemprop="dateModified" content="2020-10-31T17:00:02+09:00">
-  <meta itemprop="wordCount" content="24">
-  <meta itemprop="keywords" content="技術"><meta property="og:url" content="https://www.y103.org/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/">
-  <meta property="og:site_name" content="www.y103.org">
-  <meta property="og:title" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
-  <meta property="og:description" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2020-10-31T17:00:02+09:00">
-    <meta property="article:modified_time" content="2020-10-31T17:00:02+09:00">
+  <meta name="generator" content="Hugo 0.165.0">
+	<meta itemprop="name" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
+	<meta itemprop="description" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
+	<meta itemprop="datePublished" content="2020-10-31T17:00:02+09:00">
+	<meta itemprop="dateModified" content="2020-10-31T17:00:02+09:00">
+	<meta itemprop="wordCount" content="24">
+	<meta itemprop="keywords" content="技術"><meta property="og:url" content="https://www.y103.org/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/">
+	<meta property="og:site_name" content="www.y103.org">
+	<meta property="og:title" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
+	<meta property="og:description" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2020-10-31T17:00:02+09:00">
+		<meta property="article:modified_time" content="2020-10-31T17:00:02+09:00">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
-  <meta name="twitter:description" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
+	<meta name="twitter:description" content="client_golangを使ってPrometheusのtext formatに即したファイルを生成する">
 
   <link rel="canonical" href="https://www.y103.org/post/2020/10/client_golang%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6prometheus%E3%81%AEtext-format%E3%81%AB%E5%8D%B3%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/" />
 </head>
 <body
-    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
-  ><header
+  class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"><header
   class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
 >
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
@@ -132,7 +128,7 @@ textfile collectorへの置き換え自体は完了していないので、今�
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     const lightBg = '#faf8f1'.replace(/"/g, '');
     const setDark = (isDark) => {
-      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      metaTheme.setAttribute('content', isDark ? "rgb(0 0 0 / 85%)" : lightBg);
       htmlClass[isDark ? 'add' : 'remove']('dark');
       localStorage.setItem('dark', isDark);
     };
@@ -188,15 +184,14 @@ textfile collectorへの置き換え自体は完了していないので、今�
   </div>
 </header>
 <main
-      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
-    ><article>
+    class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"><article>
   <header class="mb-14">
     <h1 class="my-0! pb-2.5">client_golangを使ってPrometheusのtext formatに即したファイルを生成する</h1><div class="text-xs antialiased opacity-60"><time>2020/10/31</time><span class="mx-1">&middot;</span>
       <span>yjuba</span></div></header>
 
   <section><p>以下のツイートをして早二月が経過しようとしていたので、慌ててBlogを起こしている。先月は時間に余裕があったので勝手に達成していたが、今月はFF14のパッチ5.35が来たり仕事が忙しくて危うく10月が終わるところだった。殆どボズヤに籠もりっぱなしである。
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">月に一本は雑でも良いのでBlogを書くという目標を勝手に立てて勝手に完了した。</p>&mdash; silver_hawk(銀鷹) (@yutaka_j08) <a href="https://twitter.com/yutaka_j08/status/1301175780366458880?ref_src=twsrc%5Etfw">September 2, 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">月に一本は雑でも良いのでBlogを書くという目標を勝手に立てて勝手に完了した。</p>&mdash; silver_hawk(銀鷹) (@yutaka_j08) <a href="https://x.com/yutaka_j08/status/1301175780366458880?ref_src=twsrc%5Etfw">September 2, 2020</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
 </p>
 <p>以下本題。</p>
@@ -239,4 +234,5 @@ textfile collectorへの置き換え自体は完了していないので、今�
   >
 </footer>
 </body>
+
 </html>

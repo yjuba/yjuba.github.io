@@ -1,8 +1,7 @@
 baseURL = "https://www.y103.org/"
-author = "yjuba"
 copyright = "www.y103.org is licensed under CC-BY-4.0."
 pagination.pagerSize = 9
-languageCode = "ja"
+locale = "ja"
 defaultContentLanguage = "ja"
 enableInlineShortcodes = true
 
